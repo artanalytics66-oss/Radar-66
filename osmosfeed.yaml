@@ -3,10 +3,11 @@
 # https://github.com/osmoscraft/osmosfeed/blob/master/docs/osmosfeed-yaml-reference.md
 #########################
 
-# cacheUrl: https://artanalytics66-oss.github.io/Radar-66/cache.json
+cacheUrl: https://artanalytics66-oss.github.io/Radar-66/cache.json
 
 sources:
   - href: https://habr.com/ru/rss/all/all/?fl=ru
   - href: https://vc.ru/rss/all
   - href: https://www.opennet.ru/opennews/opennews_all_utf.rss
+
 
