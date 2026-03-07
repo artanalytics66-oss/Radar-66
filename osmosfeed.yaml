@@ -4,10 +4,9 @@
 #########################
 
 # cacheUrl: https://artanalytics66-oss.github.io/Radar-66/cache.json
+
 sources:
-  - href: https://github.com/osmoscraft/osmosfeed/releases.atom # Get new feature announcement via this feed
-  - href: https://css-tricks.com/feed/
-  - href: https://www.smashingmagazine.com/feed/
-  - href: https://www.freecodecamp.org/news/rss/
   - href: https://habr.com/ru/rss/all/all/?fl=ru
   - href: https://vc.ru/rss/all
+  - href: https://www.opennet.ru/opennews/opennews_all_utf.rss
+
