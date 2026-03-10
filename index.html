@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Radar-66</title>
+</head>
+<body>
+  <h1>Radar-66</h1>
+
+  <div id="digest-tool">
+    <h2>Ежедневный тематический дайджест</h2>
+
+    <label>
+      Тема:
+      <input type="text" id="user-task" placeholder="Что писать в вакансиях, чтобы не разрушать доверие на первых строках">
+    </label>
+
+    <br><br>
+
+    <label>
+      Раздел:
+      <select id="topic-select">
+        <option value="it-news">IT-новости</option>
+        <option value="tech-infra">Технические сайты / инфраструктура</option>
+        <option value="law">Юридические и правовые новости</option>
+        <option value="finance-economy">Финансы и экономика</option>
+        <option value="culture-science">Культура / наука</option>
+        <option value="people-issues">Вопросы, волнующие читателя</option>
+      </select>
+    </label>
+
+    <br><br>
+
+    <button id="build-digest">Собрать дайджест (черновик)</button>
+
+    <div id="digest-result" style="white-space: pre-wrap; margin-top: 20px;"></div>
+  </div>
+
+  <script>
+    document.getElementById('build-digest').addEventListener('click', () => {
+      const userTask = document.getElementById('user-task').value;
+      const topicId = document.getElementById('topic-select').value;
+
+      const topics = {
+        'it-news': {
+          name: 'IT-новости',
+          description: 'Система построения и автоматизации вычислительных процессов',
+        },
+        'tech-infra': {
+          name: 'Технические сайты / инфраструктура',
+          description: 'Передовые разработки и новости дня, влияющие на продуктивность',
+        },
+        'law': {
+          name: 'Юридические и правовые новости',
+          description: 'Изменения в законодательстве, новые указы и реформы',
+        },
+        'finance-economy': {
+          name: 'Финансы и экономика',
+          description: 'Новости о состоянии экономики и финансовой политики, ожидания и прогнозы',
+        },
+        'culture-science': {
+          name: 'Культура / наука',
+          description: 'Новости и передовые разработки, перспективы развития энергоснабжения и других передовых отраслей',
+        },
+        'people-issues': {
+          name: 'Вопросы, волнующие читателя',
+          description: 'Текущие проблемы рядового человека, его боль и отношение к происходящему в России',
+        },
+      };
+
+      const topic = topics[topicId];
+
+      const prompt = `
+Ты — редакционный ИИ-помощник, который готовит тематический дайджест и заготовки материалов для Блога, Телеграма и Дзена.
+
+Контекст раздела:
+- ID раздела: ${topicId}
+- Название раздела: ${topic.name}
+- Описание раздела: ${topic.description}
+
+Задание пользователя:
+- Тема: "${userTask}"
+
+Входные данные:
+- Ниже тебе будет передан список свежих новостей в формате:
+  [ЗАГОЛОВОК] — [КРАТКОЕ ОПИСАНИЕ] — [ССЫЛКА]
+
+Твоя задача:
+1) Отобрать только те новости, которые помогают раскрыть тему задания и соответствуют контексту раздела.
+2) На основе отобранных новостей:
+   - составить краткий обзор по теме;
+   - сформировать структуру и тезисы для одной статьи в блог;
+   - предложить 2–3 варианта постов для Телеграма;
+   - предложить 1–2 варианта материала для Дзена.
+
+Формат ответа:
+1. "Обзор по теме".
+2. "Статья для блога".
+3. "Посты для Телеграма".
+4. "Материалы для Дзена".
+      `.trim();
+
+      document.getElementById('digest-result').textContent = prompt;
+    });
+  </script>
+</body>
+</html>
