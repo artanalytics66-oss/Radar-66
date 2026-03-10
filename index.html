@@ -37,8 +37,18 @@
   </div>
 
   <script>
-    document.getElementById('build-digest').addEventListener('click', () => {
-      const userTask = document.getElementById('user-task').value;
+    async function loadFeed() {
+      const response = await fetch('cache.json');
+      if (!response.ok) {
+        console.error('Не удалось загрузить cache.json');
+        return [];
+      }
+      const data = await response.json();
+      return data.items || data;
+    }
+
+    document.getElementById('build-digest').addEventListener('click', async () => {
+      const userTask = document.getElementById('user-task').value.trim();
       const topicId = document.getElementById('topic-select').value;
 
       const topics = {
@@ -70,7 +80,7 @@
 
       const topic = topics[topicId];
 
-      const prompt = `
+      const basePrompt = `
 Ты — редакционный ИИ-помощник, который готовит тематический дайджест и заготовки материалов для Блога, Телеграма и Дзена.
 
 Контекст раздела:
@@ -85,6 +95,20 @@
 - Ниже тебе будет передан список свежих новостей в формате:
   [ЗАГОЛОВОК] — [КРАТКОЕ ОПИСАНИЕ] — [ССЫЛКА]
 
+НОВОСТИ:
+`.trim();
+
+      const feedItems = await loadFeed();
+
+      const newsLines = (feedItems || []).slice(0, 10).map(item => {
+        const title = item.title || '';
+        const summary = item.summary || item.description || '';
+        const link = item.url || item.link || '';
+        return `[${title}] — ${summary} — ${link}`;
+      }).join('\n');
+
+      const fullPrompt = basePrompt + '\n\n' + newsLines + `
+
 Твоя задача:
 1) Отобрать только те новости, которые помогают раскрыть тему задания и соответствуют контексту раздела.
 2) На основе отобранных новостей:
@@ -98,9 +122,9 @@
 2. "Статья для блога".
 3. "Посты для Телеграма".
 4. "Материалы для Дзена".
-      `.trim();
+`;
 
-      document.getElementById('digest-result').textContent = prompt;
+      document.getElementById('digest-result').textContent = fullPrompt;
     });
   </script>
 </body>
