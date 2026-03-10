@@ -12,7 +12,7 @@
 
     <label>
       Тема:
-      <input type="text" id="user-task" placeholder="Что писать в вакансиях, чтобы не разрушать доверие на первых строках">
+      <input type="text" id="user-task" size="80" placeholder="Что писать в вакансиях, чтобы не разрушать доверие на первых строках">
     </label>
 
     <br><br>
@@ -31,9 +31,12 @@
 
     <br><br>
 
-    <button id="build-digest">Собрать дайджест (черновик)</button>
+    <button id="build-digest">Собрать дайджест</button>
 
-    <div id="digest-result" style="white-space: pre-wrap; margin-top: 20px;"></div>
+    <div id="status" style="margin-top: 10px; color: #555;"></div>
+
+    <h2>Результат</h2>
+    <div id="digest-result" style="white-space: pre-wrap; margin-top: 10px; border: 1px solid #ccc; padding: 10px;"></div>
   </div>
 
   <script>
@@ -47,10 +50,7 @@
       return data.items || data;
     }
 
-    document.getElementById('build-digest').addEventListener('click', async () => {
-      const userTask = document.getElementById('user-task').value.trim();
-      const topicId = document.getElementById('topic-select').value;
-
+    function buildPrompt(userTask, topicId, feedItems) {
       const topics = {
         'it-news': {
           name: 'IT-новости',
@@ -98,8 +98,6 @@
 НОВОСТИ:
 `.trim();
 
-      const feedItems = await loadFeed();
-
       const newsLines = (feedItems || []).slice(0, 10).map(item => {
         const title = item.title || '';
         const summary = item.summary || item.description || '';
@@ -124,7 +122,58 @@
 4. "Материалы для Дзена".
 `;
 
-      document.getElementById('digest-result').textContent = fullPrompt;
+      return fullPrompt;
+    }
+
+    async function sendToLocalServer(prompt) {
+      const resp = await fetch("http://127.0.0.1:8000/digest", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ prompt })
+      });
+
+      if (!resp.ok) {
+        const text = await resp.text();
+        throw new Error("Ошибка сервера: " + text);
+      }
+
+      const data = await resp.json();
+      return data.result;
+    }
+
+    document.getElementById('build-digest').addEventListener('click', async () => {
+      const statusEl = document.getElementById('status');
+      const resultEl = document.getElementById('digest-result');
+      resultEl.textContent = "";
+      statusEl.textContent = "Собираю новости и отправляю запрос на локальный сервер...";
+
+      try {
+        const userTask = document.getElementById('user-task').value.trim();
+        const topicId = document.getElementById('topic-select').value;
+
+        if (!userTask) {
+          statusEl.textContent = "Введите тему.";
+          return;
+        }
+
+        const feedItems = await loadFeed();
+        if (!feedItems || feedItems.length === 0) {
+          statusEl.textContent = "Не удалось получить новости из cache.json.";
+          return;
+        }
+
+        const prompt = buildPrompt(userTask, topicId, feedItems);
+
+        const aiText = await sendToLocalServer(prompt);
+
+        statusEl.textContent = "Готово.";
+        resultEl.textContent = aiText;
+      } catch (err) {
+        console.error(err);
+        statusEl.textContent = "Ошибка: " + err.message;
+      }
     });
   </script>
 </body>
