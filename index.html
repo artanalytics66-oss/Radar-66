@@ -74,7 +74,11 @@
 </head>
 <body>
   <h1>Radar-66 — Ежедневный тематический дайджест</h1>
-  <p class="hint">Лента берётся из <code>cache.json</code> (sources[].articles[]), текст собирается локальным сервером на <code>http://127.0.0.1:8000/generate</code>.</p>
+  <p class="hint">
+    Лента берётся из <code>cache.json</code> (sources[].articles[]),
+    текст собирается локальным сервером <code>server.py</code> на
+    <code>http://127.0.0.1:8000/digest</code>.
+  </p>
 
   <div>
     <label for="topic">Тема выпуска:</label>
@@ -103,7 +107,7 @@
   <div id="result"></div>
 
   <script>
-    // Грузим все статьи из sources[].articles[]
+    // Грузим все статьи из sources[].articles[] из cache.json
     async function loadFeed() {
       const resp = await fetch('cache.json', { cache: 'no-store' });
       if (!resp.ok) {
@@ -142,8 +146,9 @@
       });
     }
 
+    // вызов твоего server.py: POST /digest с { "prompt": "..." }, ответ { "result": "..." }
     async function callBackend(prompt) {
-      const resp = await fetch('http://127.0.0.1:8000/generate', {
+      const resp = await fetch('http://127.0.0.1:8000/digest', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt })
@@ -168,11 +173,11 @@
       return [
         `Ты пишешь ежедневный новостной дайджест для раздела "${section}".`,
         `Тема выпуска: "${topic || 'без явной темы'}".`,
-        `Ниже список материалов из ленты (поле sources[].articles[] из cache.json). Используй только их содержимое и заголовки:`,
+        `Ниже список материалов из ленты (sources[].articles[] из cache.json). Используй только их содержимое и заголовки:`,
         bullets,
         `Сделай связный авторский обзор на русском языке: 3–7 абзацев, без маркированных списков.`,
         `Структура: короткое вступление, затем логичные блоки по подтемам, в конце один вывод для читателя.`,
-        `Пиши в деловом, но живом тоне, аудитория — руководители и специалисты в логистике и смежных областях.`
+        `Пиши в деловом, но живом тоне, аудитория — руководители и специалисты в логистике и смежных сферах.`
       ].join('\n\n');
     }
 
@@ -189,7 +194,7 @@
         renderFeedItems(feedItems);
       } catch (e) {
         console.error(e);
-        errorEl.textContent = 'Не удалось загрузить cache.json (проверь, что он лежит рядом с index.html).';
+        errorEl.textContent = 'Не удалось загрузить cache.json (проверь, что он лежит в той же папке, что index.html).';
       }
 
       runBtn.addEventListener('click', async () => {
@@ -207,7 +212,7 @@
         } catch (e) {
           console.error(e);
           resultEl.textContent = '';
-          errorEl.textContent = 'Ошибка генерации (проверь, что server.py запущен на 127.0.0.1:8000 и корректно отвечает).';
+          errorEl.textContent = 'Ошибка генерации (проверь, что server.py запущен на 127.0.0.1:8000 и путь /digest).';
         } finally {
           runBtn.disabled = false;
         }
