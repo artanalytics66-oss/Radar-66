@@ -1,182 +1,220 @@
-index.html
 <!doctype html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Radar-66</title>
+  <title>Radar-66 — Ежедневный тематический дайджест</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 900px;
+      margin: 24px auto;
+      padding: 0 16px 40px;
+      line-height: 1.5;
+    }
+    h1 { font-size: 26px; margin: 0 0 8px; }
+    h2 { font-size: 20px; margin-top: 24px; }
+    p { margin: 4px 0 10px; }
+    label { display: block; margin: 10px 0 4px; font-weight: 500; }
+    input[type="text"], select, textarea {
+      width: 100%;
+      padding: 6px 8px;
+      font: inherit;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 12px;
+      padding: 8px 16px;
+      font: inherit;
+      border-radius: 4px;
+      border: 1px solid #444;
+      background: #222;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:disabled {
+      opacity: .6;
+      cursor: default;
+    }
+    #feed-preview {
+      margin: 18px 0;
+      padding: 10px 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      max-height: 260px;
+      overflow: auto;
+      font-size: 14px;
+      background: #fafafa;
+    }
+    #feed-preview ul {
+      margin: 4px 0 0;
+      padding-left: 18px;
+    }
+    #result {
+      margin-top: 10px;
+      padding: 10px 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      min-height: 140px;
+      white-space: pre-wrap;
+      background: #fff;
+    }
+    .error {
+      color: #b00020;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+    .hint {
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <h1>Radar-66</h1>
+  <h1>Radar-66 — Ежедневный тематический дайджест</h1>
+  <p class="hint">Лента берётся из <code>cache.json</code>, текст собирается локальным сервером на <code>http://127.0.0.1:8000/generate</code>.</p>
 
-  <div id="digest-tool">
-    <h2>Ежедневный тематический дайджест</h2>
+  <div>
+    <label for="topic">Тема выпуска:</label>
+    <input id="topic" type="text" placeholder="Например: Генеративный ИИ в логистике">
 
-    <label>
-      Тема:
-      <input type="text" id="user-task" size="80" placeholder="Что писать в вакансиях, чтобы не разрушать доверие на первых строках">
-    </label>
+    <label for="section">Раздел:</label>
+    <select id="section">
+      <option value="IT-новости">IT-новости</option>
+      <option value="Технические сайты / инфраструктура">Технические сайты / инфраструктура</option>
+      <option value="Юридические и правовые новости">Юридические и правовые новости</option>
+      <option value="Финансы и экономика">Финансы и экономика</option>
+      <option value="Культура / наука">Культура / наука</option>
+      <option value="Вопросы, волнующие читателя">Вопросы, волнующие читателя</option>
+    </select>
 
-    <br><br>
-
-    <label>
-      Раздел:
-      <select id="topic-select">
-        <option value="it-news">IT-новости</option>
-        <option value="tech-infra">Технические сайты / инфраструктура</option>
-        <option value="law">Юридические и правовые новости</option>
-        <option value="finance-economy">Финансы и экономика</option>
-        <option value="culture-science">Культура / наука</option>
-        <option value="people-issues">Вопросы, волнующие читателя</option>
-      </select>
-    </label>
-
-    <br><br>
-
-    <button id="build-digest">Собрать дайджест</button>
-
-    <div id="status" style="margin-top: 10px; color: #555;"></div>
-
-    <h2>Результат</h2>
-    <div id="digest-result" style="white-space: pre-wrap; margin-top: 10px; border: 1px solid #ccc; padding: 10px;"></div>
+    <button id="run">Собрать дайджест</button>
+    <div id="error" class="error"></div>
   </div>
 
+  <div id="feed-preview">
+    <strong>Последние материалы из ленты:</strong>
+    <ul id="feed-list"></ul>
+  </div>
+
+  <h2>Результат</h2>
+  <div id="result"></div>
+
   <script>
+    // Загрузка ленты из cache.json (JSON Feed: data.items — массив объектов) [web:52][web:55]
     async function loadFeed() {
-      const response = await fetch('cache.json');
-      if (!response.ok) {
-        console.error('Не удалось загрузить cache.json');
-        return [];
+      const resp = await fetch('cache.json', { cache: 'no-store' });
+      if (!resp.ok) {
+        throw new Error('HTTP ' + resp.status);
       }
-      const data = await response.json();
-      return data.items || data;
+      const data = await resp.json();
+
+      // если osmosfeed отдаёт чистый JSON Feed
+      if (Array.isArray(data.items)) {
+        return data.items;
+      }
+
+      // запасной вариант: items внутри первого feed, если структура вида { feeds: [ { items: [...] } ] } [web:58]
+      if (Array.isArray(data.feeds) && data.feeds[0] && Array.isArray(data.feeds[0].items)) {
+        return data.feeds[0].items;
+      }
+
+      return [];
     }
 
-    function buildPrompt(userTask, topicId, feedItems) {
-      const topics = {
-        'it-news': {
-          name: 'IT-новости',
-          description: 'Система построения и автоматизации вычислительных процессов',
-        },
-        'tech-infra': {
-          name: 'Технические сайты / инфраструктура',
-          description: 'Передовые разработки и новости дня, влияющие на продуктивность',
-        },
-        'law': {
-          name: 'Юридические и правовые новости',
-          description: 'Изменения в законодательстве, новые указы и реформы',
-        },
-        'finance-economy': {
-          name: 'Финансы и экономика',
-          description: 'Новости о состоянии экономики и финансовой политики, ожидания и прогнозы',
-        },
-        'culture-science': {
-          name: 'Культура / наука',
-          description: 'Новости и передовые разработки, перспективы развития энергоснабжения и других передовых отраслей',
-        },
-        'people-issues': {
-          name: 'Вопросы, волнующие читателя',
-          description: 'Текущие проблемы рядового человека, его боль и отношение к происходящему в России',
-        },
-      };
+    function renderFeedItems(feedItems) {
+      const latest = (feedItems || []).slice(0, 10);
+      const list = document.getElementById('feed-list');
+      list.innerHTML = '';
 
-      const topic = topics[topicId];
+      if (!latest.length) {
+        const li = document.createElement('li');
+        li.textContent = 'Нет данных в cache.json';
+        list.appendChild(li);
+        return;
+      }
 
-      const basePrompt = `
-Ты — редакционный ИИ-помощник, который готовит тематический дайджест и заготовки материалов для Блога, Телеграма и Дзена.
-
-Контекст раздела:
-- ID раздела: ${topicId}
-- Название раздела: ${topic.name}
-- Описание раздела: ${topic.description}
-
-Задание пользователя:
-- Тема: "${userTask}"
-
-Входные данные:
-- Ниже тебе будет передан список свежих новостей в формате:
-  [ЗАГОЛОВОК] — [КРАТКОЕ ОПИСАНИЕ] — [ССЫЛКА]
-
-НОВОСТИ:
-`.trim();
-
-      const newsLines = (feedItems || []).slice(0, 10).map(item => {
-        const title = item.title || '';
-        const summary = item.summary || item.description || '';
-        const link = item.url || item.link || '';
-        return `[${title}] — ${summary} — ${link}`;
-      }).join('\\n');
-
-      const fullPrompt = basePrompt + '\\n\\n' + newsLines + `
-
-Твоя задача:
-1) Отобрать только те новости, которые помогают раскрыть тему задания и соответствуют контексту раздела.
-2) На основе отобранных новостей:
-   - составить краткий обзор по теме;
-   - сформировать структуру и тезисы для одной статьи в блог;
-   - предложить 2–3 варианта постов для Телеграма;
-   - предложить 1–2 варианта материала для Дзена.
-
-Формат ответа:
-1. "Обзор по теме".
-2. "Статья для блога".
-3. "Посты для Телеграма".
-4. "Материалы для Дзена".
-`;
-
-      return fullPrompt;
+      latest.forEach(item => {
+        const li = document.createElement('li');
+        const title = item.title || item.content_text || item.content_html || item.url || '';
+        li.textContent = title;
+        list.appendChild(li);
+      });
     }
 
-    async function sendToLocalServer(prompt) {
-      const resp = await fetch("http://127.0.0.1:8000/digest", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
+    async function callBackend(prompt) {
+      const resp = await fetch('http://127.0.0.1:8000/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt })
       });
-
       if (!resp.ok) {
-        const text = await resp.text();
-        throw new Error("Ошибка сервера: " + text);
+        throw new Error('HTTP ' + resp.status);
       }
-
       const data = await resp.json();
-      return data.result;
+      return data.result || '';
     }
 
-    document.getElementById('build-digest').addEventListener('click', async () => {
-      const statusEl = document.getElementById('status');
-      const resultEl = document.getElementById('digest-result');
-      resultEl.textContent = "";
-      statusEl.textContent = "Собираю новости и отправляю запрос на локальный сервер...";
+    function buildPrompt(topic, section, feedItems) {
+      const latest = (feedItems || []).slice(0, 20);
 
+      const bullets = latest.map(item => {
+        const title = item.title || item.content_text || '';
+        const url = item.url || '';
+        const date = item.date_published || item.published || '';
+        return `- ${title}${date ? ' (' + date + ')' : ''}${url ? ' — ' + url : ''}`;
+      }).join('\n');
+
+      return [
+        `Ты пишешь ежедневный новостной дайджест для раздела "${section}".`,
+        `Тема выпуска: "${topic || 'без явной темы'}".`,
+        `Ниже список материалов из ленты. Используй только их содержимое и заголовки:`,
+        bullets,
+        `Сделай связный авторский обзор на русском языке: 3–7 абзацев, без маркированных списков.`,
+        `Структура: короткое вступление, затем логичные блоки по подтемам, в конце один вывод для читателя.`,
+        `Пиши в деловом, но живом тоне, ориентируйся на аудиторию: руководители и специалисты в сфере логистики и смежных областях.`
+      ].join('\n\n');
+    }
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const errorEl = document.getElementById('error');
+      const resultEl = document.getElementById('result');
+      const runBtn = document.getElementById('run');
+
+      let feedItems = [];
+
+      // первая загрузка ленты
       try {
-        const userTask = document.getElementById('user-task').value.trim();
-        const topicId = document.getElementById('topic-select').value;
-
-        if (!userTask) {
-          statusEl.textContent = "Введите тему.";
-          return;
-        }
-
-        const feedItems = await loadFeed();
-        if (!feedItems || feedItems.length === 0) {
-          statusEl.textContent = "Не удалось получить новости из cache.json.";
-          return;
-        }
-
-        const prompt = buildPrompt(userTask, topicId, feedItems);
-
-        const aiText = await sendToLocalServer(prompt);
-
-        statusEl.textContent = "Готово.";
-        resultEl.textContent = aiText;
-      } catch (err) {
-        console.error(err);
-        statusEl.textContent = "Ошибка: " + err.message;
+        feedItems = await loadFeed();
+        renderFeedItems(feedItems);
+      } catch (e) {
+        console.error(e);
+        errorEl.textContent = 'Не удалось загрузить cache.json (проверь osmosfeed и GitHub Pages).';
       }
+
+      runBtn.addEventListener('click', async () => {
+        errorEl.textContent = '';
+        const topic = document.getElementById('topic').value.trim();
+        const section = document.getElementById('section').value;
+
+        runBtn.disabled = true;
+        resultEl.textContent = 'Генерация дайджеста...';
+
+        try {
+          const prompt = buildPrompt(topic, section, feedItems);
+          const text = await callBackend(prompt);
+          resultEl.textContent = text || 'Пустой ответ от модели.';
+        } catch (e) {
+          console.error(e);
+          resultEl.textContent = '';
+          errorEl.textContent = 'Ошибка генерации (проверь, что server.py запущен на 127.0.0.1:8000).';
+        } finally {
+          runBtn.disabled = false;
+        }
+      });
     });
   </script>
 </body>
 </html>
-                              
