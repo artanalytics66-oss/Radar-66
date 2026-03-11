@@ -10,9 +10,10 @@ sources:
   - href: https://vc.ru/rss/all
   - href: https://www.opennet.ru/opennews/opennews_all_utf.rss
 
-  layout:
+layout:
   name: "empty"
 # trigger rebuild
+
 
 
 
