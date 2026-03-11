@@ -82,7 +82,7 @@
 
   <div>
     <label for="topic">Тема выпуска:</label>
-    <input id="topic" type="text" placeholder="Например: Генеративный ИИ в логистике">
+    <input id="topic" type="text" placeholder="Например: Низкая производительность труда как вызов логистики">
 
     <label for="section">Раздел:</label>
     <select id="section">
@@ -99,7 +99,7 @@
   </div>
 
   <div id="feed-preview">
-    <strong>Последние материалы из ленты:</strong>
+    <strong>Материалы, которые попали в выпуск:</strong>
     <ul id="feed-list"></ul>
   </div>
 
@@ -107,7 +107,6 @@
   <div id="result"></div>
 
   <script>
-    // Читаем все статьи из sources[].articles[] в cache.json
     async function loadFeed() {
       const resp = await fetch('cache.json', { cache: 'no-store' });
       if (!resp.ok) {
@@ -126,27 +125,84 @@
       return allArticles;
     }
 
-    function renderFeedItems(feedItems) {
-      const latest = (feedItems || []).slice(0, 10);
+    function extractKeywords(topic) {
+      const base = ['логистика', 'склад', 'доставка', 'цепочки поставок', 'supply chain',
+                    'эффективность', 'производительность', 'бизнес', 'экономика'];
+      if (!topic) return base;
+
+      const words = topic
+        .toLowerCase()
+        .replace(/[^\p{L}\p{N}\s]+/gu, ' ')
+        .split(/\s+/)
+        .filter(w => w.length > 3);
+
+      const unique = Array.from(new Set([...words, ...base]));
+      return unique;
+    }
+
+    function buildArticlesWithThesis(feedItems, topic) {
+      const keywords = extractKeywords(topic);
+      const articles = Array.isArray(feedItems) ? feedItems : [];
+
+      const scored = articles.map(item => {
+        const title = (item.title || '').toLowerCase();
+        const desc = (item.description || '').toLowerCase();
+        let score = 0;
+        keywords.forEach(k => {
+          if (!k) return;
+          if (title.includes(k)) score += 3;
+          if (desc.includes(k)) score += 1;
+        });
+        return { item, score };
+      });
+
+      const relevant = scored
+        .filter(x => x.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 20)
+        .map(x => x.item);
+
+      const used = relevant.length ? relevant : articles.slice(0, 10);
+
+      const withThesis = used.map((item, idx) => {
+        const title = item.title || '';
+        const link = item.link || item.id || '';
+        const rawDesc = item.description || '';
+        const thesis = rawDesc.length > 300 ? rawDesc.slice(0, 297) + '…' : rawDesc;
+
+        return {
+          index: idx + 1,
+          title,
+          link,
+          thesis
+        };
+      });
+
+      return withThesis;
+    }
+
+    function renderFeedItems(articlesWithThesis) {
       const list = document.getElementById('feed-list');
       list.innerHTML = '';
 
-      if (!latest.length) {
+      if (!articlesWithThesis.length) {
         const li = document.createElement('li');
-        li.textContent = 'Нет данных в cache.json';
+        li.textContent = 'Нет релевантных материалов в cache.json';
         list.appendChild(li);
         return;
       }
 
-      latest.forEach(item => {
+      articlesWithThesis.forEach(a => {
         const li = document.createElement('li');
-        const title = item.title || item.description || item.link || item.id || '';
-        li.textContent = title;
+        const shortThesis = a.thesis
+          ? (a.thesis.length > 120 ? a.thesis.slice(0, 117) + '…' : a.thesis)
+          : '';
+
+        li.textContent = `[${a.index}] ${a.title}` + (shortThesis ? ` — ${shortThesis}` : '');
         list.appendChild(li);
       });
     }
 
-    // Вызов server.py: POST /generate c { "prompt": "..." }, ответ { "result": "..." }
     async function callBackend(prompt) {
       const resp = await fetch('http://127.0.0.1:8000/generate', {
         method: 'POST',
@@ -160,25 +216,74 @@
       return data.result || '';
     }
 
-    function buildPrompt(topic, section, feedItems) {
-      const latest = (feedItems || []).slice(0, 20);
-
-      const bullets = latest.map(item => {
-        const title = item.title || '';
-        const link = item.link || item.id || '';
-        const date = item.publishedOn || '';
-        return `- ${title}${date ? ' (' + date + ')' : ''}${link ? ' — ' + link : ''}`;
+    function buildPrompt(topic, section, articlesWithThesis) {
+      const newsLines = (articlesWithThesis || []).map(a => {
+        const title = a.title || '';
+        const link = a.link || '';
+        const thesis = a.thesis || '';
+        return `[${a.index}] ${title}${link ? ' — ' + link : ''}${thesis ? ' — ' + thesis : ''}`;
       }).join('\n');
 
-      return [
-        `Ты пишешь ежедневный новостной дайджест для раздела "${section}".`,
-        `Тема выпуска: "${topic || 'без явной темы'}".`,
-        `Ниже список материалов из ленты (sources[].articles[] из cache.json). Используй только их содержимое и заголовки:`,
-        bullets,
-        `Сделай связный авторский обзор на русском языке: 3–7 абзацев, без маркированных списков.`,
-        `Структура: короткое вступление, затем логичные блоки по подтемам, в конце один вывод для читателя.`,
-        `Пиши в деловом, но живом тоне, аудитория — руководители и специалисты в логистике и смежных сферах.`
-      ].join('\n\n');
+      const basePrompt = `
+Ты — редактор и автор аналитических материалов для деловой аудитории: руководители, логистические директора, менеджеры по развитию, владельцы бизнеса.
+
+Твоя задача — по заданной теме и подборке свежих материалов из IT/бизнес‑медиа подготовить один универсальный текст, который можно без правок публиковать:
+- как статью в блоге/на сайте;
+- как пост в Телеграм‑канале;
+- как материал для Дзена.
+
+Требования к результату:
+1. Структура:
+   - Сначала ЧЁТКИЙ заголовок (одной строкой).
+   - Затем короткий лид — 1–2 предложения, которые цепляют и сразу объясняют, о чём текст и почему это важно.
+   - Дальше 3–5 абзацев основного текста.
+   - В конце отдельный заключительный абзац с выводом и рекомендациями (что делать читателю, на что обратить внимание).
+
+2. Объём и стиль:
+   - Примерный объём: 400–800 слов.
+   - Стиль: деловой, но живой; без канцелярита и «воды».
+   - Пиши простыми понятными фразами, как хороший редактор делового медиа.
+   - Избегай списков и маркированных пунктов — только цельный связный текст.
+
+3. Работа с источниками:
+   - Используй только переданные материалы из новостной ленты (см. ниже список).
+   - Обязательно опирайся минимум на 3–5 разных материалов.
+   - Не пересказывай каждую новость отдельно; сгруппируй по смыслу.
+   - В тексте ссылайся на материалы через их номера в квадратных скобках вида [1], [2] и т.д., используя список ниже.
+   - В конце текста выведи короткий раздел «Источники:» со списком вида:
+     [1] Заголовок — ссылка
+     [2] Заголовок — ссылка
+
+4. Фокус:
+   - Главный фокус — российская экономика и производительность труда, логистика и смежные отрасли (склады, транспорт, цепочки поставок, IT‑инфраструктура в логистике).
+   - Если тема выпуска напрямую не про логистику, ищи и подчёркивай её связь с логистическими и операционными процессами: влияние на эффективность, издержки, кадры, технологии.
+   - Всё, что не удаётся привязать к бизнесу и логистике, используй минимально или опускай.
+
+Исходные данные для выпуска:
+- Тема выпуска: «${topic || 'без явной темы'}».
+- Раздел: «${section}».
+- Материалы из новостной ленты (заголовки, ссылки и краткие тезисы):
+${newsLines}
+
+Сначала проанализируй, какие ключевые линии и тренды вытекают из этих материалов применительно к теме выпуска и логистике/операционному управлению. Затем на основе этого анализа напиши ОДИН цельный текст по описанным выше правилам.
+
+В ответе выведи только готовый материал в следующем формате (без служебных комментариев и пояснений):
+
+ЗАГОЛОВОК
+
+ЛИД — 1–2 предложения.
+
+ОСНОВНОЙ ТЕКСТ — 3–5 абзацев.
+
+ФИНАЛЬНЫЙ АБЗАЦ С ВЫВОДОМ И РЕКОМЕНДАЦИЯМИ.
+
+Источники:
+[1] …
+[2] …
+[3] …
+`.trim();
+
+      return basePrompt;
     }
 
     document.addEventListener('DOMContentLoaded', async () => {
@@ -187,11 +292,12 @@
       const runBtn = document.getElementById('run');
 
       let feedItems = [];
+      let articlesWithThesis = [];
 
-      // первая загрузка ленты
       try {
         feedItems = await loadFeed();
-        renderFeedItems(feedItems);
+        articlesWithThesis = buildArticlesWithThesis(feedItems, '');
+        renderFeedItems(articlesWithThesis);
       } catch (e) {
         console.error(e);
         errorEl.textContent = 'Не удалось загрузить cache.json (проверь, что он лежит в той же папке, что index.html).';
@@ -202,11 +308,14 @@
         const topic = document.getElementById('topic').value.trim();
         const section = document.getElementById('section').value;
 
+        articlesWithThesis = buildArticlesWithThesis(feedItems, topic || section || '');
+        renderFeedItems(articlesWithThesis);
+
         runBtn.disabled = true;
         resultEl.textContent = 'Генерация дайджеста...';
 
         try {
-          const prompt = buildPrompt(topic, section, feedItems);
+          const prompt = buildPrompt(topic, section, articlesWithThesis);
           const text = await callBackend(prompt);
           resultEl.textContent = text || 'Пустой ответ от модели.';
         } catch (e) {
