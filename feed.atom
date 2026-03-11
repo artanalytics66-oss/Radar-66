@@ -2,10 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://artanalytics66-oss.github.io/Radar-66/index.html</id>
     <title>osmos::feed</title>
-    <updated>2026-03-11T01:50:01.168Z</updated>
+    <updated>2026-03-11T03:45:36.945Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://artanalytics66-oss.github.io/Radar-66/index.html"/>
     <link rel="self" href="https://artanalytics66-oss.github.io/Radar-66/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[[Перевод] Аугментации изображений: как улучшить качество моделей без новых данных]]></title>
+        <id>https://habr.com/ru/articles/1008560/</id>
+        <link href="https://habr.com/ru/articles/1008560/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1008560"/>
+        <updated>2026-03-11T03:30:51.000Z</updated>
+        <summary type="html"><![CDATA[Аугментация данных — один из самых мощных инструментов улучшения качества моделей машинного обучения. В компьютерном зрении она почти всегда критична: без неё модели быстро переобучаются и плохо обобщаются.
+Но на практике её часто используют поверхностно: «добавим флип, поворот и color jitter».
+В этой статье разбираем аугментации глубже:
+— два режима аугментаций (in-distribution и out-of-distribution)
+— почему нереалистичные трансформации могут улучшать обобщающую способность
+— когда аугментации начинают вредить
+— как строить устойчивый пайплайн аугментаций
+Материал основан на ~10 годах практики обучения моделей компьютерного зрения (на работе, при написании научных статей, в ML соревнованиях) и ~7 годах разработки библиотеки Albumentations.
+ Читать далее]]></summary>
+        <author>
+            <name>ternaus</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[SQL в 2026 для аналитика (с чего начать, где учиться и что реально нужно знать)]]></title>
         <id>https://habr.com/ru/articles/1008826/</id>
