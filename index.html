@@ -2,27 +2,32 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Radar-66 — Ежедневный тематический дайджест</title>
+  <title>Radar-66 — Контент-комбайн</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     * { box-sizing: border-box; }
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 900px;
+      max-width: 1100px;
       margin: 24px auto;
       padding: 0 16px 40px;
       line-height: 1.5;
     }
     h1 { font-size: 26px; margin: 0 0 8px; }
     h2 { font-size: 20px; margin-top: 24px; }
+    h3 { font-size: 18px; margin-top: 18px; }
     p { margin: 4px 0 10px; }
     label { display: block; margin: 10px 0 4px; font-weight: 500; }
-    input[type="text"], select {
+    input[type="text"], select, textarea {
       width: 100%;
       padding: 6px 8px;
       font: inherit;
       border: 1px solid #ccc;
       border-radius: 4px;
+    }
+    textarea {
+      min-height: 120px;
+      resize: vertical;
     }
     button {
       margin-top: 12px;
@@ -52,14 +57,23 @@
       margin: 4px 0 0;
       padding-left: 18px;
     }
-    #result {
-      margin-top: 10px;
-      padding: 10px 12px;
+    .cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .block {
       border: 1px solid #ddd;
       border-radius: 4px;
-      min-height: 140px;
-      white-space: pre-wrap;
+      padding: 8px 10px;
       background: #fff;
+    }
+    .block pre {
+      white-space: pre-wrap;
+      margin: 0;
+      font-family: inherit;
+      font-size: 14px;
     }
     .error {
       color: #b00020;
@@ -70,41 +84,62 @@
       font-size: 13px;
       color: #666;
     }
+    @media (max-width: 900px) {
+      .cols {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Radar-66 — Ежедневный тематический дайджест</h1>
+  <h1>Radar-66 — Ежедневный тематический комбайн</h1>
   <p class="hint">
-    Лента берётся из <code>cache.json</code> (sources[].articles[]),
-    текст собирается локальным сервером <code>server.py</code> на
-    <code>http://127.0.0.1:8000/generate</code>.
+    Лента берётся из <code>cache.json</code> (sources[].articles[] от osmosfeed).
+    Локальный сервер <code>server.py</code> на <code>http://127.0.0.1:8000/generate</code> собирает конспект и пакет текстов (блог, Телеграм, Дзен).
   </p>
 
   <div>
     <label for="topic">Тема выпуска:</label>
-    <input id="topic" type="text" placeholder="Например: Низкая производительность труда как вызов логистики">
+    <input id="topic" type="text" placeholder="Например: Низкая производительность труда как вызов для российской экономики 2026">
 
     <label for="section">Раздел:</label>
     <select id="section">
-      <option value="IT-новости">IT-новости</option>
-      <option value="Технические сайты / инфраструктура">Технические сайты / инфраструктура</option>
-      <option value="Юридические и правовые новости">Юридические и правовые новости</option>
-      <option value="Финансы и экономика">Финансы и экономика</option>
-      <option value="Культура / наука">Культура / наука</option>
+      <option value="Общество и экономика">Общество и экономика</option>
+      <option value="Технологии и ИИ">Технологии и ИИ</option>
+      <option value="Культура и наука">Культура и наука</option>
+      <option value="Работа и образование">Работа и образование</option>
+      <option value="Политика и мир">Политика и мир</option>
       <option value="Вопросы, волнующие читателя">Вопросы, волнующие читателя</option>
     </select>
 
-    <button id="run">Собрать дайджест</button>
+    <button id="run">Собрать пакет материалов</button>
     <div id="error" class="error"></div>
   </div>
 
   <div id="feed-preview">
-    <strong>Материалы, которые попали в выпуск:</strong>
+    <strong>Материалы, которые попали в подборку (по теме):</strong>
     <ul id="feed-list"></ul>
   </div>
 
   <h2>Результат</h2>
-  <div id="result"></div>
+  <div class="cols">
+    <div class="block">
+      <h3>Конспект</h3>
+      <pre id="summary-block"></pre>
+    </div>
+    <div class="block">
+      <h3>Пост для блога</h3>
+      <pre id="blog-block"></pre>
+    </div>
+    <div class="block">
+      <h3>Посты для Телеграма</h3>
+      <pre id="tg-block"></pre>
+    </div>
+    <div class="block">
+      <h3>Текст для Дзена</h3>
+      <pre id="zen-block"></pre>
+    </div>
+  </div>
 
   <script>
     async function loadFeed() {
@@ -126,8 +161,9 @@
     }
 
     function extractKeywords(topic) {
-      const base = ['логистика', 'склад', 'доставка', 'цепочки поставок', 'supply chain',
-                    'эффективность', 'производительность', 'бизнес', 'экономика'];
+      const base = ['экономика', 'кризис', 'рынок', 'технологии', 'автоматизация',
+                    'производительность', 'эффективность', 'труд', 'зарплата',
+                    'инфляция', 'бизнес', 'компания', 'государство', 'общество'];
       if (!topic) return base;
 
       const words = topic
@@ -195,7 +231,7 @@
       articlesWithThesis.forEach(a => {
         const li = document.createElement('li');
         const shortThesis = a.thesis
-          ? (a.thesis.length > 120 ? a.thesis.slice(0, 117) + '…' : a.thesis)
+          ? (a.thesis.length > 140 ? a.thesis.slice(0, 137) + '…' : a.thesis)
           : '';
 
         li.textContent = `[${a.index}] ${a.title}` + (shortThesis ? ` — ${shortThesis}` : '');
@@ -203,93 +239,96 @@
       });
     }
 
-    async function callBackend(prompt) {
-      const resp = await fetch('http://127.0.0.1:8000/generate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prompt })
-      });
-      if (!resp.ok) {
-        throw new Error('HTTP ' + resp.status);
-      }
-      const data = await resp.json();
-      return data.result || '';
-    }
-
-    function buildPrompt(topic, section, articlesWithThesis) {
-      const newsLines = (articlesWithThesis || []).map(a => {
+    function buildSourcesPayload(articlesWithThesis) {
+      return (articlesWithThesis || []).map(a => {
         const title = a.title || '';
         const link = a.link || '';
         const thesis = a.thesis || '';
         return `[${a.index}] ${title}${link ? ' — ' + link : ''}${thesis ? ' — ' + thesis : ''}`;
       }).join('\n');
+    }
 
-      const basePrompt = `
-Ты — редактор и автор аналитических материалов для деловой аудитории: руководители, логистические директора, менеджеры по развитию, владельцы бизнеса.
+    async function callBackend(topic, section, sourcesPayload) {
+      const resp = await fetch('http://127.0.0.1:8000/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          topic,
+          section,
+          sources: sourcesPayload
+        })
+      });
+      if (!resp.ok) {
+        throw new Error('HTTP ' + resp.status);
+      }
+      const data = await resp.json();
+      return data;
+    }
 
-Твоя задача — по заданной теме и подборке свежих материалов из IT/бизнес‑медиа подготовить один универсальный текст, который можно без правок публиковать:
-- как статью в блоге/на сайте;
-- как пост в Телеграм‑канале;
-- как материал для Дзена.
+    function renderResult(data) {
+      const summaryEl = document.getElementById('summary-block');
+      const blogEl = document.getElementById('blog-block');
+      const tgEl = document.getElementById('tg-block');
+      const zenEl = document.getElementById('zen-block');
 
-Требования к результату:
-1. Структура:
-   - Сначала ЧЁТКИЙ заголовок (одной строкой).
-   - Затем короткий лид — 1–2 предложения, которые цепляют и сразу объясняют, о чём текст и почему это важно.
-   - Дальше 3–5 абзацев основного текста.
-   - В конце отдельный заключительный абзац с выводом и рекомендациями (что делать читателю, на что обратить внимание).
+      if (!data || typeof data !== 'object') {
+        summaryEl.textContent = 'Пустой ответ или неверный формат.';
+        blogEl.textContent = '';
+        tgEl.textContent = '';
+        zenEl.textContent = '';
+        return;
+      }
 
-2. Объём и стиль:
-   - Примерный объём: 400–800 слов.
-   - Стиль: деловой, но живой; без канцелярита и «воды».
-   - Пиши простыми понятными фразами, как хороший редактор делового медиа.
-   - Избегай списков и маркированных пунктов — только цельный связный текст.
+      const summary = data.summary || {};
+      const blog = data.blog || {};
+      const telegram = Array.isArray(data.telegram) ? data.telegram : [];
+      const zen = data.zen || {};
 
-3. Работа с источниками:
-   - Используй только переданные материалы из новостной ленты (см. ниже список).
-   - Обязательно опирайся минимум на 3–5 разных материалов.
-   - Не пересказывай каждую новость отдельно; сгруппируй по смыслу.
-   - В тексте ссылайся на материалы через их номера в квадратных скобках вида [1], [2] и т.д., используя список ниже.
-   - В конце текста выведи короткий раздел «Источники:» со списком вида:
-     [1] Заголовок — ссылка
-     [2] Заголовок — ссылка
+      const mp = Array.isArray(summary.main_points) ? summary.main_points : [];
+      const ctr = Array.isArray(summary.controversial) ? summary.controversial : [];
+      const bp = Array.isArray(summary.best_practices) ? summary.best_practices : [];
 
-4. Фокус:
-   - Главный фокус — российская экономика и производительность труда, логистика и смежные отрасли (склады, транспорт, цепочки поставок, IT‑инфраструктура в логистике).
-   - Если тема выпуска напрямую не про логистику, ищи и подчёркивай её связь с логистическими и операционными процессами: влияние на эффективность, издержки, кадры, технологии.
-   - Всё, что не удаётся привязать к бизнесу и логистике, используй минимально или опускай.
+      summaryEl.textContent =
+        'Ключевые тезисы:\n' +
+        (mp.length ? mp.map((x, i) => `${i + 1}. ${x}`).join('\n') : '—') +
+        '\n\nСпорные моменты:\n' +
+        (ctr.length ? ctr.map((x, i) => `${i + 1}. ${x}`).join('\n') : '—') +
+        '\n\nЛучшие практики / выводы:\n' +
+        (bp.length ? bp.map((x, i) => `${i + 1}. ${x}`).join('\n') : '—');
 
-Исходные данные для выпуска:
-- Тема выпуска: «${topic || 'без явной темы'}».
-- Раздел: «${section}».
-- Материалы из новостной ленты (заголовки, ссылки и краткие тезисы):
-${newsLines}
+      const blogTitle = blog.title || '';
+      const blogLead = blog.lead || '';
+      const blogBody = blog.body || '';
+      blogEl.textContent =
+        (blogTitle ? blogTitle + '\n\n' : '') +
+        (blogLead ? blogLead + '\n\n' : '') +
+        (blogBody || '');
 
-Сначала проанализируй, какие ключевые линии и тренды вытекают из этих материалов применительно к теме выпуска и логистике/операционному управлению. Затем на основе этого анализа напиши ОДИН цельный текст по описанным выше правилам.
+      if (!telegram.length) {
+        tgEl.textContent = 'Нет сгенерированных постов для Телеграма.';
+      } else {
+        tgEl.textContent = telegram.map((t, i) => {
+          const tt = t.title || `Пост ${i + 1}`;
+          const body = t.body || '';
+          return `### ${tt}\n\n${body}`;
+        }).join('\n\n-----\n\n');
+      }
 
-В ответе выведи только готовый материал в следующем формате (без служебных комментариев и пояснений):
-
-ЗАГОЛОВОК
-
-ЛИД — 1–2 предложения.
-
-ОСНОВНОЙ ТЕКСТ — 3–5 абзацев.
-
-ФИНАЛЬНЫЙ АБЗАЦ С ВЫВОДОМ И РЕКОМЕНДАЦИЯМИ.
-
-Источники:
-[1] …
-[2] …
-[3] …
-`.trim();
-
-      return basePrompt;
+      const zenTitle = zen.title || '';
+      const zenBody = zen.body || '';
+      zenEl.textContent =
+        (zenTitle ? zenTitle + '\n\n' : '') +
+        (zenBody || '');
     }
 
     document.addEventListener('DOMContentLoaded', async () => {
       const errorEl = document.getElementById('error');
-      const resultEl = document.getElementById('result');
       const runBtn = document.getElementById('run');
+
+      const summaryEl = document.getElementById('summary-block');
+      const blogEl = document.getElementById('blog-block');
+      const tgEl = document.getElementById('tg-block');
+      const zenEl = document.getElementById('zen-block');
 
       let feedItems = [];
       let articlesWithThesis = [];
@@ -300,28 +339,44 @@ ${newsLines}
         renderFeedItems(articlesWithThesis);
       } catch (e) {
         console.error(e);
-        errorEl.textContent = 'Не удалось загрузить cache.json (проверь, что он лежит в той же папке, что index.html).';
+        errorEl.textContent = 'Не удалось загрузить cache.json (проверь osmosfeed и GitHub Pages).';
       }
 
       runBtn.addEventListener('click', async () => {
         errorEl.textContent = '';
+        summaryEl.textContent = '';
+        blogEl.textContent = '';
+        tgEl.textContent = '';
+        zenEl.textContent = '';
+
         const topic = document.getElementById('topic').value.trim();
         const section = document.getElementById('section').value;
 
         articlesWithThesis = buildArticlesWithThesis(feedItems, topic || section || '');
         renderFeedItems(articlesWithThesis);
 
+        const sourcesPayload = buildSourcesPayload(articlesWithThesis);
+        if (!sourcesPayload) {
+          errorEl.textContent = 'Нет материалов для темы (или пустой cache.json).';
+          return;
+        }
+
         runBtn.disabled = true;
-        resultEl.textContent = 'Генерация дайджеста...';
+        tgEl.textContent = '';
+        blogEl.textContent = '';
+        zenEl.textContent = '';
+        summaryEl.textContent = 'Генерация пакета материалов...';
 
         try {
-          const prompt = buildPrompt(topic, section, articlesWithThesis);
-          const text = await callBackend(prompt);
-          resultEl.textContent = text || 'Пустой ответ от модели.';
+          const data = await callBackend(topic, section, sourcesPayload);
+          renderResult(data);
         } catch (e) {
           console.error(e);
-          resultEl.textContent = '';
-          errorEl.textContent = 'Ошибка генерации (проверь, что server.py запущен на 127.0.0.1:8000 и путь /generate).';
+          summaryEl.textContent = '';
+          blogEl.textContent = '';
+          tgEl.textContent = '';
+          zenEl.textContent = '';
+          errorEl.textContent = 'Ошибка генерации (проверь, что server.py запущен на 127.0.0.1:8000 и доступен /generate).';
         } finally {
           runBtn.disabled = false;
         }
