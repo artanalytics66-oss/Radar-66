@@ -10,9 +10,20 @@ sources:
   - href: https://vc.ru/rss/all
   - href: https://www.opennet.ru/opennews/opennews_all_utf.rss
 
+  # новые надежные RSS-ленты
+  - href: https://www.itrn.ru/rss/
+  - href: https://ru.investing.com/rss/news.rss
+  - href: https://www.retail.ru/rss/news.php
+
+  # эти сайты не имеют публичных RSS, лучше не добавлять "как есть",
+  # чтобы не ломать osmosfeed; подключать через свой HTML→RSS, если сделаешь
+  # - href: https://myseldon.com/ru/
+  # - href: https://ouzs.ru/news/
+
 layout:
   name: "empty"
 # trigger rebuild
+
 
 
 
