@@ -2,10 +2,707 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://artanalytics66-oss.github.io/Radar-66/index.html</id>
     <title>osmos::feed</title>
-    <updated>2026-08-17T01:04:12.479Z</updated>
+    <updated>2026-08-18T01:02:36.622Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://artanalytics66-oss.github.io/Radar-66/index.html"/>
     <link rel="self" href="https://artanalytics66-oss.github.io/Radar-66/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[Yalla Group опубликовала смешанные результаты за II квартал 2026 года]]></title>
+        <id>https://ru.investing.com/news/transcripts/article-93CH-3356531</id>
+        <link href="https://ru.investing.com/news/transcripts/article-93CH-3356531"/>
+        <updated>2026-08-18T00:52:32.000Z</updated>
+        <author>
+            <name>Investing.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Директор Rackspace Technology продал акции на $207 554]]></title>
+        <id>https://ru.investing.com/news/insider-trading-news/article-93CH-3356528</id>
+        <link href="https://ru.investing.com/news/insider-trading-news/article-93CH-3356528"/>
+        <updated>2026-08-18T00:48:09.000Z</updated>
+        <author>
+            <name>Investing.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Операционный директор Apollomics купил акции на $300 000]]></title>
+        <id>https://ru.investing.com/news/insider-trading-news/article-93CH-3356527</id>
+        <link href="https://ru.investing.com/news/insider-trading-news/article-93CH-3356527"/>
+        <updated>2026-08-18T00:47:52.000Z</updated>
+        <author>
+            <name>Investing.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Финдиректор Verisk Analytics продала акции на $71 980]]></title>
+        <id>https://ru.investing.com/news/insider-trading-news/article-93CH-3356526</id>
+        <link href="https://ru.investing.com/news/insider-trading-news/article-93CH-3356526"/>
+        <updated>2026-08-18T00:47:44.000Z</updated>
+        <author>
+            <name>Investing.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Годовая прибыль BHP выросла на 30% благодаря меди]]></title>
+        <id>https://ru.investing.com/news/earnings/article-3356530</id>
+        <link href="https://ru.investing.com/news/earnings/article-3356530"/>
+        <updated>2026-08-18T00:46:50.000Z</updated>
+        <author>
+            <name>Investing.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Директор UFP Technologies продала акции на $625 141]]></title>
+        <id>https://ru.investing.com/news/insider-trading-news/article-93CH-3356525</id>
+        <link href="https://ru.investing.com/news/insider-trading-news/article-93CH-3356525"/>
+        <updated>2026-08-18T00:32:29.000Z</updated>
+        <author>
+            <name>Investing.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Гендиректор Apollomics приобрёл акции на $7,55 млн]]></title>
+        <id>https://ru.investing.com/news/insider-trading-news/article-93CH-3356524</id>
+        <link href="https://ru.investing.com/news/insider-trading-news/article-93CH-3356524"/>
+        <updated>2026-08-18T00:32:14.000Z</updated>
+        <author>
+            <name>Investing.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Deterra Royalties: сильная прибыль за 2026 год]]></title>
+        <id>https://ru.investing.com/news/transcripts/article-93CH-3356522</id>
+        <link href="https://ru.investing.com/news/transcripts/article-93CH-3356522"/>
+        <updated>2026-08-18T00:24:28.000Z</updated>
+        <author>
+            <name>Investing.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Amplitude Energy отчиталась о рекордном 2026 году]]></title>
+        <id>https://ru.investing.com/news/transcripts/article-93CH-3356523</id>
+        <link href="https://ru.investing.com/news/transcripts/article-93CH-3356523"/>
+        <updated>2026-08-18T00:24:28.000Z</updated>
+        <author>
+            <name>Investing.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Amplitude Energy отчиталась о рекордном FY2026 и планах роста ECSP]]></title>
+        <id>https://ru.investing.com/news/transcripts/article-93CH-3356521</id>
+        <link href="https://ru.investing.com/news/transcripts/article-93CH-3356521"/>
+        <updated>2026-08-18T00:23:00.000Z</updated>
+        <author>
+            <name>Investing.com</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Точка G]]></title>
+        <id>https://habr.com/ru/articles/1071440/</id>
+        <link href="https://habr.com/ru/articles/1071440/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071440"/>
+        <updated>2026-08-17T21:05:21.000Z</updated>
+        <summary type="html"><![CDATA[Штука, которая точно есть; все о ней говорят; каждый уверен в своей; снаружи её не найти и не доказать, а споры о её существовании не утихают десятилетиями.
+Это не научная статья и не популяризаторский пересказ — это стенограмма настоящего диалога с Клод (Anthropic), в котором мы пытались разобраться, почему споры о сознании (зомби, чужие сознания, hard problem) в принципе не заканчиваются данными, и что с этим общего у теоремы Гёделя о неполноте. По ходу поймали друг друга на ошибках трижды — эти моменты в тексте не вычищены, они часть аргумента.
+ Читать далее]]></summary>
+        <author>
+            <name>Snark-s</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Anthropic публикует системные промпты Claude. Разбираем, как они менялись от Haiku 3 до Opus 5]]></title>
+        <id>https://habr.com/ru/companies/syntx_ai/articles/1071438/</id>
+        <link href="https://habr.com/ru/companies/syntx_ai/articles/1071438/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071438"/>
+        <updated>2026-08-17T21:00:56.000Z</updated>
+        <summary type="html"><![CDATA[Что Claude получает ещё до первого сообщения пользователя, зачем модели отдельные инструкции по работе с инструментами и длинными задачами и какие идеи из system prompts можно использовать в собственных AI-ассистентах.
+Когда мы отправляем Claude первый запрос, для пользователя диалог только начинается.
+Для модели нет.
+До пользовательского сообщения Claude уже получает системную инструкцию, которая задаёт контекст работы: кто модель, какая сейчас дата, как оформлять ответы, как работать с доступными инструментами, что делать с неопределённостью и какие ограничения учитывать.
+Anthropic публикует такие инструкции в официальной документации в разделе System Prompts. Причём там сохранена история изменений: от Claude Haiku 3 и Opus 3 до Fable 5 и Opus 5.
+Получается довольно интересный датасет для тех, кто работает с LLM не только через обычный чат.
+Можно посмотреть, как за два года изменился подход Anthropic к системным промптам и что компания считает действительно важным объяснить модели до того, как пользователь вообще сформулировал задачу.
+И некоторые выводы вполне применимы к собственным AI-агентам.
+ Читать далее]]></summary>
+        <author>
+            <name>syntxaiofficial (SYNTX.AI)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Возобновлена разработка планировщика задач MuQSS и набора патчей "-ck" для ядра Linux]]></title>
+        <id>https://www.opennet.ru/opennews/art.shtml?num=66088</id>
+        <link href="https://www.opennet.ru/opennews/art.shtml?num=66088"/>
+        <updated>2026-08-17T20:05:14.000Z</updated>
+        <summary type="html"><![CDATA[Кон Коливас (Con Kolivas) возобновил работу над планировщиком задач MuQSS (Multiple Queue Skiplist Scheduler) и набором патчей "-ck для ядра Linux, нацеленных на повышение отзывчивости и интерактивности при выполнении пользовательских задач и игр. Разработка данных проектов была прекращена в 2021 году из-за потери мотивации и нехватки времени. Теперь Кон вернулся к прежней деятельности и выпустил набор патчей ck и планировщик MuQSS  для ядра Linux 7.2. Отмечается, что вопрос нехватки времени удалось решить благодаря применению AI-инструментов, которые упростили разработку и адаптацию изменений к новому ядру.]]></summary>
+        <author>
+            <name>OpenNews.opennet.ru: Общая лента новостей</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[YouTube начнёт засчитывать просмотры видео любых форматов с момента их запуска]]></title>
+        <id>3083676</id>
+        <link href="https://vc.ru/services/3083676-youtube-nachnyot-zaschityvat-prosmotry-s-pervogo-kadra-video?from=rss"/>
+        <updated>2026-08-17T19:31:10.000Z</updated>
+        <summary type="html"><![CDATA[Чтобы сделать метрики прозрачнее для авторов.]]></summary>
+        <author>
+            <name>Таня Боброва</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Как я собрал сайт на 30 000 SEO‑страниц за месяц]]></title>
+        <id>https://habr.com/ru/articles/1071424/</id>
+        <link href="https://habr.com/ru/articles/1071424/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071424"/>
+        <updated>2026-08-17T18:52:07.000Z</updated>
+        <summary type="html"><![CDATA[Я играю на гитаре. Не то чтобы хорошо, но у костра сходит. И каждый раз одна и та же сцена: кто-то просит сыграть конкретную песню, я достаю телефон, открываю сайт с аккордами — и следующие полторы минуты наблюдаю, как на одной палке связи грузится баннер, потом второй баннер, потом видеореклама, потом всплывашка «скачайте наше приложение», и где-то под всем этим — песня. К этому моменту у костра уже поют что-то другое. Без меня.
+В какой-то момент я сформулировал, чего хочу: сайт с аккордами, который открывается мгновенно, работает без интернета и ничего мне не продаёт. Такого сайта не нашлось. Зато нашлись подписки на Claude и GPT и спортивный вопрос: может ли один человек, не написав руками почти ни строчки кода, собрать себе идеальный продукт за месяц?
+Проверил. Рассказываю:
+ Читать далее]]></summary>
+        <author>
+            <name>Ikorg</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Финансовая пирамида государственного масштаба]]></title>
+        <id>https://habr.com/ru/articles/1071420/</id>
+        <link href="https://habr.com/ru/articles/1071420/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071420"/>
+        <updated>2026-08-17T18:24:21.000Z</updated>
+        <summary type="html"><![CDATA[17 августа 1998 года - день, когда миллионы россиян узнали значение слов «дефолт» и «девальвация». День, который навсегда изменил жизнь и судьбу многих из нас, на долгие годы разделив всё на до и после.
+ Читать далее]]></summary>
+        <author>
+            <name>rusinvest</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Делимобиль сошел с ума?]]></title>
+        <id>https://habr.com/ru/articles/1071408/</id>
+        <link href="https://habr.com/ru/articles/1071408/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071408"/>
+        <updated>2026-08-17T16:51:11.000Z</updated>
+        <summary type="html"><![CDATA[17 августа в Краснодаре произошло ДТП на 7-полосной дороге. С участием 4 автомобилей. Если бы не "Делимобиль" - нет никаких других причин рассказывать о нем: полиция и скорая прибыли за минуты, движение отрегулировано, погибших нет, все службы отработали эталонно. 
+Вот только один из участников ДТП был клиентом каршеринга "Делимобиль". И их техническая поддержка своими неадекватными, невменяемыми требованиями буквально довела ситуацию до "белого каления". 
+Кратко: после ДТП требовали от водителя не прекращать поездку (деньги списываются), предоставить невозможные в ближайшие часы, или нереальные априори ("временная справка о ДТП") документы. А без них - отказывались прислать представителя, техпомощь, эвакуатор.
+Сам я оказался не только свидетелем, но даже и участником этого цирка. В самом тексте - подробности происходившего
+ Читать далее]]></summary>
+        <author>
+            <name>ZiNTeR</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Перевод] Что спрятано в 2500 слоях: как по весам нейросети восстановили MD5]]></title>
+        <id>https://habr.com/ru/companies/otus/articles/1070244/</id>
+        <link href="https://habr.com/ru/companies/otus/articles/1070244/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1070244"/>
+        <updated>2026-08-17T16:50:17.000Z</updated>
+        <summary type="html"><![CDATA[Что делать, если нейросеть из 2500 слоёв выглядит как чёрный ящик, а привычные методы анализа не помогают? В статье разбираем, как по весам и структуре модели удалось восстановить скрытую программу, распознать MD5 и дойти до ответа через механистическую интерпретируемость, SAT и несколько тупиковых гипотез. 
+ Читать разбор]]></summary>
+        <author>
+            <name>kmoseenk (OTUS)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Роботам дали 30 минут потушить пожар. Справились три команды из двенадцати]]></title>
+        <id>https://habr.com/ru/articles/1071406/</id>
+        <link href="https://habr.com/ru/articles/1071406/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071406"/>
+        <updated>2026-08-17T16:50:11.000Z</updated>
+        <summary type="html"><![CDATA[В воскресенье, 16 августа, в одной из пекинских пожарных частей прошел финал аварийно-спасательной дисциплины вторых Всемирных игр гуманоидных роботов (WHRG). Год назад роботы на первых играх бегали, танцевали и играли в футбол в декорациях, теперь их впервые вывели на настоящую площадку — с настоящим огнем, настоящими пожарными и, как выяснилось, настоящим дождем. Из двенадцати команд, стартовавших в тот день, до конца испытания дошли только три.
+ Читать далее]]></summary>
+        <author>
+            <name>runaway_llm</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Маскируем чувствительные данные при отправке в ИИ‑чат. Бесплатное приложение]]></title>
+        <id>https://habr.com/ru/articles/1071398/</id>
+        <link href="https://habr.com/ru/articles/1071398/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071398"/>
+        <updated>2026-08-17T16:33:35.000Z</updated>
+        <summary type="html"><![CDATA[ИИ‑чаты стали рабочим инструментом наравне с почтой — а вместе с ними появился новый канал утечек, которого три года назад не существовало. Договоры, резюме, пароли и клиентские данные уезжают на чужие серверы не через взлом, а через обычное поле ввода. Блокировать доступ пробовали многие — люди просто уходят на личные устройства, и риск становится невидимым.
+Мы решили задачу иначе: расширение для браузера в Chrome Web Store, которое перед отправкой заменяет чувствительные данные обезличенными метками, а ответ ИИ расшифровывает обратно — прямо на экране, незаметно для человека.
+В статье расскажу, какие подходы мы перепробовали и почему они не сработали, как выглядит путь пользователя и что у решения под капотом — от контрольных сумм до локального распознавания сканов.
+ Читать далее]]></summary>
+        <author>
+            <name>mishatimtim</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Что делать когда каждый может сделать продукт?]]></title>
+        <id>https://habr.com/ru/articles/1071386/</id>
+        <link href="https://habr.com/ru/articles/1071386/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071386"/>
+        <updated>2026-08-17T16:15:21.000Z</updated>
+        <summary type="html"><![CDATA[У технологических рынков есть неприятная цикличность. Сначала новую услугу способны запустить только гиганты: инфраструктура дорога, специалистов мало, а клиент ещё не понимает, зачем ему всё это. Затем технология стандартизируется, оборудование дешевеет, компетенции расползаются по рынку — и вчерашняя привилегия нескольких корпораций превращается в массовый бизнес, куда входят сотни небольших игроков. Конкуренция растёт, маржа падает, рынок перенасыщается; часть новичков закрывается, часть остаётся локальной, а наиболее интересных снова покупают те самые гиганты, с которых цикл начинался.
+Так развивалась сотовая связь: от дорогой инфраструктуры и ограниченного числа операторов — к массовому рынку, ценовой конкуренции и последующей консолидации. Так развивался доступ в интернет: районные провайдеры тянули кабель быстрее, чем крупные компании согласовывали смету, но со временем абонентские базы, сети и локальные бренды начали собирать большие группы. Теперь в ту же фазу входят IT-сервисы и SaaS, только искусственный интеллект сжимает весь цикл: то, что раньше требовало отдела разработки, поддержки и маркетинга, небольшая команда собирает из моделей, облаков и готовых компонентов.
+Значит ли это, что нас ждут тысячи равных компаний и вечный праздник малого бизнеса? Почему тогда технологическое удешевление снова заканчивается укрупнением? Почему хороший продукт не удерживает рынок, а гигант, даже опоздавший с функцией, покупает конкурента или копирует его и возвращает долю? Именно это мы и разберём, потому что производство продукта и производство спроса — разные индустрии.
+ Читать далее]]></summary>
+        <author>
+            <name>Igor_bezgalov</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Как PHP превратился в героя мемов и пережил все свои «похороны»]]></title>
+        <id>https://habr.com/ru/articles/1071378/</id>
+        <link href="https://habr.com/ru/articles/1071378/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071378"/>
+        <updated>2026-08-17T15:43:31.000Z</updated>
+        <summary type="html"><![CDATA[Если бы в интернете вручали премию за количество мемов, в финал наверняка вышли бы Леонардо ДиКаприо, коты с осуждающим взглядом и язык PHP. Над последним разработчики шутят уже столько лет, что фразу «я пишу на PHP» лучше говорить шепотом или не говорить вовсе.
+При этом язык, который регулярно объявляют мертвым, продолжает получать новые версии, обслуживать миллионы сайтов и оставаться востребованным в веб-разработке. Как появился PHP, чем он заслужил плохую репутацию и почему до сих пор не исчез — рассказываем в этой статье.
+ Читать далее]]></summary>
+        <author>
+            <name>DevRoad</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Продакт-менеджмент на удалёнке: как онлайн-магистратура ИТМО готовит лидеров цифровых продуктов]]></title>
+        <id>https://habr.com/ru/companies/yandex_praktikum/articles/1071374/</id>
+        <link href="https://habr.com/ru/companies/yandex_praktikum/articles/1071374/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071374"/>
+        <updated>2026-08-17T15:30:12.000Z</updated>
+        <summary type="html"><![CDATA[Привет, на связи команда Яндекс Практикума. Приёмная кампания в онлайн-магистратуру «Управление продуктом в цифровом бизнесе» ИТМО в партнёрстве с Практикумом вот-вот закончится: 28 августа — последний день приёма документов. Но вы ещё успеете поступить, в статье расскажем, как это сделать и что входит в программу.
+ Читать далее]]></summary>
+        <author>
+            <name>larissaorehanova (Яндекс Практикум)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[От стажера до сеньора: как «Ростелеком» прокачивает студентов до уровня ИБ-специалистов]]></title>
+        <id>https://habr.com/ru/companies/rostelecom/articles/1071298/</id>
+        <link href="https://habr.com/ru/companies/rostelecom/articles/1071298/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071298"/>
+        <updated>2026-08-17T15:29:15.000Z</updated>
+        <summary type="html"><![CDATA[Дефицит специалистов в сфере кибербезопасности перестал быть кадровой проблемой. Сегодня это прямой стратегический риск для бизнеса. Пока злоумышленники осваивают ИИ и практикуют новые техники взлома, мы в «Ростелекоме» укрепляем защиту. Причем делаем ставку не только на поиск уникальных ИБ-профессионалов, но и вполне успешно превращаем студентов первых и вторых курсов в специалистов по кибербезу.
+Привет, Хабр! Я Ольга Лапшина, HR-бизнес-партнер блока информационной безопасности «Ростелекома». В этой статье расскажу, как мы построили настоящую лабораторию по созданию киберзащитников и покажу, как в ней все работает.
+ Читать далее]]></summary>
+        <author>
+            <name>Olga_Lapshina (Ростелеком)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Что настоящего осталось в программисте?]]></title>
+        <id>https://habr.com/ru/articles/1070746/</id>
+        <link href="https://habr.com/ru/articles/1070746/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1070746"/>
+        <updated>2026-08-17T15:18:11.000Z</updated>
+        <summary type="html"><![CDATA[А вот реально, что настоящего осталось в программисте когда вокруг llm ? Где его суть и индивидуальность, где теперь его ценность ?
+ Читать далее]]></summary>
+        <author>
+            <name>rurikovich</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Когда компаниям пора внедрять help desk в поддержку]]></title>
+        <id>https://habr.com/ru/articles/1071362/</id>
+        <link href="https://habr.com/ru/articles/1071362/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071362"/>
+        <updated>2026-08-17T15:12:28.000Z</updated>
+        <summary type="html"><![CDATA[Help desk часто ошибочно считают инструментом для больших контакт-центров: десятки операторов, отдельный руководитель поддержки, огромная очередь заявок.
+На практике система обработки обращений (help desk) становится нужна гораздо раньше — когда клиентские вопросы перестают помещаться в почте, мессенджерах, таблицах и памяти сотрудников.
+Сначала кажется, что все под контролем. Клиент написал менеджеру в Telegram — менеджер ответил. Другой отправил письмо на общую почту — его переслали коллеге. Третий спросил про заказ в чате на сайте — оператор пообещал уточнить.
+Но чем больше обращений, тем чаще команда начинает искать не решение, а сам контекст: где клиент писал, кто уже отвечал, что ему обещали и на каком этапе вопрос остановился.
+ Читать далее]]></summary>
+        <author>
+            <name>usedesk</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Что уже есть на Луне для создания радиаторов?]]></title>
+        <id>https://habr.com/ru/articles/1071360/</id>
+        <link href="https://habr.com/ru/articles/1071360/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071360"/>
+        <updated>2026-08-17T15:05:34.000Z</updated>
+        <summary type="html"><![CDATA[Перегрев в космосе — это опасность как для научного оборудования, так и для вычислительной электроники на спутниках. В космосе нет конвекции, а сброс тепла только через излучение значительно усложняет и так непростую задачу.
+Давайте разберемся, как ее решают и можно ли сделать радиаторы используя только внеземные материалы?
+ Читать далее]]></summary>
+        <author>
+            <name>Bertolomych</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[5G на «низком старте» в России: сети ещё нет, а смартфоны уже готовы]]></title>
+        <id>https://habr.com/ru/articles/1071348/</id>
+        <link href="https://habr.com/ru/articles/1071348/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071348"/>
+        <updated>2026-08-17T14:47:08.000Z</updated>
+        <summary type="html"><![CDATA[Всем привет! На базе наших аналитических исследований вышла новость про 5G устройства в России. Решили поделиться с читателями Хабра подробностями, которые не попали в публикацию.
+Это взгляд на запуск сети пятого поколения не из пресс-релизов операторов, а на базе миллионов мобильных устройств, работающих в России.
+ Читать далее]]></summary>
+        <author>
+            <name>AProkopenko</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Как стать менеджером продукта и сколько можно зарабатывать]]></title>
+        <id>https://habr.com/ru/companies/habr_career/articles/1071350/</id>
+        <link href="https://habr.com/ru/companies/habr_career/articles/1071350/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071350"/>
+        <updated>2026-08-17T14:44:53.000Z</updated>
+        <summary type="html"><![CDATA[Продуктовый менеджмент — одно из самых перспективных направлений в IT. Причём специализированное техническое образование продакту не нужно, а зарплаты сопоставимы с заработком сильных разработчиков.
+Конечно, от продакта требуются другие навыки, за который рынок готов платить, — про них расскажем в статье. А ещё — о том, как попасть в профессию и где учиться.
+ Читать далее]]></summary>
+        <author>
+            <name>alina_kiz (Хабр Карьера)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Как мы научили XCUITest тапать в контролы на глубине 136 уровней вложенности]]></title>
+        <id>https://habr.com/ru/companies/cian/articles/1071034/</id>
+        <link href="https://habr.com/ru/companies/cian/articles/1071034/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071034"/>
+        <updated>2026-08-17T14:38:07.000Z</updated>
+        <summary type="html"><![CDATA[Привет! Меня зовут Даниил, я iOS-инженер в Циане. В этой статье расскажу, как мы заставили XCUITest работать с экраном, к которому он в принципе не мог подойти.
+У нас есть server-driven UI экран, наш BDUI, про движок которого была отдельная статья. Дерево вьюх у него настолько глубокое, что любое обращение теста к элементам падало. Причём двумя разными способами, и оба — не из-за кода, а из-за жёстких лимитов внутри самого фреймворка автоматизации.
+В итоге мы научились читать дерево произвольной глубины и тапать/вводить текст в поля, которые лежат глубже ~60 уровней AX-дерева, где публичный XCUITest бессилен. Далее я буду фокусироваться на общей технике для XCUITest, а не на внутреннем устройстве нашего движка. Так что статья пригодится, даже если у вас никакого BDUI нет, а просто есть очень глубокий экран.
+ Читать далее]]></summary>
+        <author>
+            <name>daniil-trcomplete (Циан)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Перевод] Пересекая реку Стикс: Spring Boot 3.5 и проблема зомби-зависимостей]]></title>
+        <id>https://habr.com/ru/companies/axiomjdk/articles/1071344/</id>
+        <link href="https://habr.com/ru/companies/axiomjdk/articles/1071344/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071344"/>
+        <updated>2026-08-17T14:34:30.000Z</updated>
+        <summary type="html"><![CDATA[Недавно я разбирал истории CVE, связанные с завершением поддержки Tomcat 8.5, и решил посмотреть на Spring Boot 3.5. Я задался тем же вопросом применительно к Spring Boot: что происходит с уровнем защищённости приложения, когда используемая версия достигает End Of Life (EOL)?
+ Читать далее]]></summary>
+        <author>
+            <name>Sniffl (Axiom JDK)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Фитнес-тренажёры и Starlink на яхтах вместо дорогого алкоголя и икры: привычки новоиспечённых миллиардеров из ИИ-компаний меняют рынок услуг для сверхбогатых]]></title>
+        <id>3083006</id>
+        <link href="https://vc.ru/money/3083006-novye-privychki-milliarderov-iz-ii-fitness-na-yakhtakh-i-starlink?from=rss"/>
+        <updated>2026-08-17T14:34:07.000Z</updated>
+        <summary type="html"><![CDATA[О тенденции рассказало издание Financial Times.]]></summary>
+        <author>
+            <name>Ася Карпова</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Security Week 2634: многоликая уязвимость в macOS Screen Sharing]]></title>
+        <id>https://habr.com/ru/companies/kaspersky/articles/1071144/</id>
+        <link href="https://habr.com/ru/companies/kaspersky/articles/1071144/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071144"/>
+        <updated>2026-08-17T14:31:10.000Z</updated>
+        <summary type="html"><![CDATA[6 августа компания Apple выпустила срочный патч, закрывающий уязвимость CVE-2026-65400 в операционной системе macOS. Обновления стали доступны для версий macOS Tahoe (26.6.1), а также более старых Sequoia (15.7.9) и Sonoma (14.8.9). Уязвимость обнаружена в службе, отвечающей за возможность поделиться содержимым экрана рабочего стола. В описании патча, как всегда максимально лаконичном, компания Apple благодарит исследователя Альфредо Песоли из компании Bynario. Его публикацию по данной теме можно прочитать здесь. В ней описана возможность неправомерного доступа к компьютеру Apple с максимальными привилегиями, но только если атакующему известен пароль.
+На самом деле, как позднее указали представители компании Calif, речь идет о двух разных уязвимостях в одном и том же модуле. Идентификатор проблемы, которую выявили в Bynario, — CVE-2026-43760. Она была обнаружена при помощи ИИ-ассистента ChatGPT и относится к классу post-auth — то есть атакующий должен знать пароль. Эта проблема, вместе с парой других, также в Screen Sharing, была закрыта апдейтом macOS 26.6. Еще раньше исследователь, известный под ником Osxreverser, обнаружил уязвимость класса pre-auth — эксплуатация без аутентификации, пароль знать не требуется. Но не стал сообщать о ней компании Apple, а только среагировал на публикацию компании Bynario.
+ 
+ Читать далее]]></summary>
+        <author>
+            <name>Kaspersky_Lab («Лаборатория Касперского»)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[От клика до железа: хроника одного запроса. Часть 2]]></title>
+        <id>https://habr.com/ru/companies/nspk/articles/1067156/</id>
+        <link href="https://habr.com/ru/companies/nspk/articles/1067156/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1067156"/>
+        <updated>2026-08-17T14:29:26.000Z</updated>
+        <summary type="html"><![CDATA[В первой части мы заставили кнопку на веб-странице запустить локальный exe-файл через расширение Chrome и Native Messaging Host. Теперь усложним задачу: операция длится десять секунд, сообщает прогресс и поддерживает отмену. Для этого заменим sendNativeMessage() постоянным соединением connectNative(), перепишем хост на Java 21, разберём протокол, восстановление соединения и жизненный цикл процесса, а затем соберём exe с помощью GraalVM Native Image и проверим всё в настоящем Chrome.
+ Читать вторую часть]]></summary>
+        <author>
+            <name>gostokhovza (Мир Plat.Form (НСПК))</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DragonDoll для Google Chrome: обновите ваш шпион до последней версии]]></title>
+        <id>https://habr.com/ru/companies/pt/articles/1069960/</id>
+        <link href="https://habr.com/ru/companies/pt/articles/1069960/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1069960"/>
+        <updated>2026-08-17T13:55:02.000Z</updated>
+        <summary type="html"><![CDATA[Весной 2026 года специалисты направления Threat Intelligence экспертного центра безопасности Positive Technologies обнаружили необычную атаку на пользователей Саудовской Аравии с использованием неизвестного ранее APK-файл с именем Chrome.apk. Образец заинтересовал: за милой картинкой обновления Google Chrome и неожиданным требованием для работы «специальных возможностей» мы обнаружили тщательно защищенную от анализа цепочку запуска Android-шпиона.
+ Читать далее]]></summary>
+        <author>
+            <name>ptsecurity (Positive Technologies)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Фристон и Ванчурин как философы эры ИИ. Профессиональная философия остается в стороне]]></title>
+        <id>https://habr.com/ru/articles/1071316/</id>
+        <link href="https://habr.com/ru/articles/1071316/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071316"/>
+        <updated>2026-08-17T13:39:28.000Z</updated>
+        <summary type="html"><![CDATA[Пока LLM-индустрия наращивает масштабы дата-центров и обучающих датасетов, всё чаще возникает вопрос, а что дальше? Энергия, знания, деньги не бесконечны. Что будет, когда что-то из них кончится? 
+Топы надеются на AGI, который, внезапно появившись из тераваттов и петабайтов, решит все проблемы и ответит на все вопросы. К сожалению, есть сомнения в столь чудесном событии.
+Проблема в том, что нет предпосылок, что AGI появится в текущей архитектуре. Потому что горизонт не расширяется изнутри вычислимой системы, нужен внешний источник, невыводимый из состояния. Поэтому всё чаще исследователи пытаются найти нужное направление поиска в философии. 
+Эта статья о том, поможет ли философия, а если нет, то кто?
+ Читать далее]]></summary>
+        <author>
+            <name>Kamil_GR</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Перевод] Зачем компаниям строить собственный AI и как это делать?]]></title>
+        <id>https://habr.com/ru/articles/1071308/</id>
+        <link href="https://habr.com/ru/articles/1071308/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071308"/>
+        <updated>2026-08-17T13:28:39.000Z</updated>
+        <summary type="html"><![CDATA[Привет! Меня зовут Саша Журавлев. Я венчурный инвестор и основатель фонда Mento VC. Мы инвестируем в технологические компании на стадиях Seed / Series A в США, а в своем телеграм-канале рассказываю, как вижу рынок и принимаю инвестиционные решения.
+ Читать далее]]></summary>
+        <author>
+            <name>exitsexist</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Инженерный подход к этимологии русского (индоевропейского) праязыка и преодоление «ленивых ответов» LLM]]></title>
+        <id>https://habr.com/ru/articles/1071302/</id>
+        <link href="https://habr.com/ru/articles/1071302/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071302"/>
+        <updated>2026-08-17T13:19:22.000Z</updated>
+        <summary type="html"><![CDATA[Введение. Парадокс современных технологий
+Прошло четыре месяца с момента выхода в свет моей книги «Живое слово от истоков до современности. Этимология русского языка на основе методов системного анализа». Пятое издание. Книга-анонс.» У части моих друзей, знакомых с искусственным интеллектом (ИИ), нейронными сетями появились вопросы по комментариям ИИ в отношении книги. Это важный вопрос, поэтому подготовил данный материал.
+Но начну по порядку: когда я писал книгу «Живое слово от истоков до современности», исходил из того, что главный читатель — это живой человек, готовый размышлять и проверять факты. Однако после публикации столкнулся с неожиданным эффектом: оказывается между мной и читателями имеются иные действующие лица и критики в виде ИИ.
+Современные большие языковые модели (LLM) — такие как ChatGPT, Gemini или DeepSeek  и другие — обладают колоссальной вычислительной мощностью. Однако продвинутые студенты, преподаватели и исследователи, пытающиеся проанализировать с их помощью мою книгу «Живое слово от истоков до современности», сталкиваются с разочаровывающим парадоксом.
+Вместо глубокого анализа алгоритмы ИИ часто выдают шаблонный ответ: «это фолк-лингвистика», «альтернативная этимология», «не признаётся академической наукой» и т.д. Интерес к исследованию угасает, так и не начавшись.
+Почему так происходит, как устроен цифровой барьер между ИИ и новыми научными идеями, и как заставить нейросеть работать с максимальной квалификацией? Это важно и является общим не только применительно к моей теме. 
+ Читать далее]]></summary>
+        <author>
+            <name>vmorozov57</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Курс евро на межбанковском рынке превысил 99 рублей впервые с марта 2026 года]]></title>
+        <id>3075891</id>
+        <link href="https://vc.ru/money/3075891-kurs-evro-na-mezhbanke-prevysil-99-rubley?from=rss"/>
+        <updated>2026-08-17T13:07:15.000Z</updated>
+        <summary type="html"><![CDATA[Доллар на межбанке — почти 85 рублей.]]></summary>
+        <author>
+            <name>Таня Боброва</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Реестр МТК: что даёт статус малой технологической компании ИТ-бизнесу]]></title>
+        <id>https://habr.com/ru/articles/1071300/</id>
+        <link href="https://habr.com/ru/articles/1071300/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071300"/>
+        <updated>2026-08-17T13:02:23.000Z</updated>
+        <summary type="html"><![CDATA[Я ИТ-юрист, занимаюсь аккредитацией ИТ-компаний, включением программ в реестр российского ПО и разбираю применение различных льгот для ИТ-компаний.
+Материал для ИТ-менеджмента: технических директоров, продактов, основателей молодых компаний. В прошлом материале про реестры стартапов в 19 регионах я обещала отдельно разобрать реестр МТК. Выполняю здесь разбираю, что статус малой технологической компании даёт бизнесу и как он связан с ИТ-аккредитацией.
+ Читать далее]]></summary>
+        <author>
+            <name>ksalnikova</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Перевод] Сжатие данных — это предсказание]]></title>
+        <id>https://habr.com/ru/companies/ruvds/articles/1070172/</id>
+        <link href="https://habr.com/ru/companies/ruvds/articles/1070172/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1070172"/>
+        <updated>2026-08-17T13:01:59.000Z</updated>
+        <summary type="html"><![CDATA[Недавно я читала материалы о сжатии данных, и меня внезапно озарила безумная мысль: по сути своей, алгоритмы сжатия и LLM предназначены для решения одной и той же задачи.
+В этом посте я познакомлю вас с основами сжатия, чтобы вы могли понять его глубокую связь с моделированием языка. Возможно, вас это изумит.
+ Читать далее]]></summary>
+        <author>
+            <name>interpres (RUVDS.com)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Как одна забытая зависимость уронила прод и привела к появлению Dependency Validator]]></title>
+        <id>https://habr.com/ru/companies/ru_mts/articles/1068084/</id>
+        <link href="https://habr.com/ru/companies/ru_mts/articles/1068084/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1068084"/>
+        <updated>2026-08-17T12:34:57.000Z</updated>
+        <summary type="html"><![CDATA[Привет, Хабр. Я Матвей Лихота, старший Go-разработчик и DevSecOps. Как это часто бывает с внутренними инструментами, идея этой утилиты появилась уже после того, как у нас упал прод. Во время хотфикса сотрудник забыл обновить в одном из двух сервисов версию библиотеки с контрактами и в результате в зависимостях осталась предыдущая версия. Перед слиянием код собирался и тесты проходили, но после деплоя сервис упал с ошибкой 500: новое поле в структуре запроса не появилось на сервере. Пришлось откатить изменения и даунтайм был ощутимый. 
+Снова попадать в такую ситуацию никому, конечно, не хотелось. Можно было бы добавить пункт в предрелизный чек-лист, но кто будет заполнять его во время хотфикса? Можно было еще раз напомнить разработчикам про версии, но такие напоминания работают от силы пару недель, а потом об этом снова забывают.
+Тогда я решил, что теперь проверять актуальность зависимостей будет CI. Так и появился Dependency Validator.
+ Читать дальше]]></summary>
+        <author>
+            <name>cadeusept (МТС)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ОС, которая должна была убить Windows]]></title>
+        <id>https://habr.com/ru/companies/studyai/articles/1071288/</id>
+        <link href="https://habr.com/ru/companies/studyai/articles/1071288/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071288"/>
+        <updated>2026-08-17T12:31:52.000Z</updated>
+        <summary type="html"><![CDATA[Но вместо этого убила себя. Это история Apple Copland, операционной системы, на которую возлагали огромные надежды, но, как обычно, что-то пошло не так…
+ Читать далее]]></summary>
+        <author>
+            <name>DimaIam (StudyAI)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[От uname до промпта на 919 тысяч символов: три месяца внутри двух ханипотов]]></title>
+        <id>https://habr.com/ru/articles/1071286/</id>
+        <link href="https://habr.com/ru/articles/1071286/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071286"/>
+        <updated>2026-08-17T12:30:43.000Z</updated>
+        <summary type="html"><![CDATA[Один хакер полтора часа исследовал поддельный Bitrix-сервер: нашёл конфигурацию, извлёк ложные учётные данные базы, попытался выгрузить таблицы и записать PHP-файл.
+Другой клиент отправил в открытый Ollama-compatible API 27 тысяч реальных задач. Самый большой промпт содержал 919 тысяч символов. Модели за API при этом не было.
+Я три месяца наблюдал за двумя среднеинтерактивными ханипотами — традиционным SCADA/Bitrix-стендом и поддельным AI gateway. В статье разбираю 2,5 млн событий Cowrie, стотысячный MySQL password spray, 183 сохранённых payload, массовую эксплуатацию AI API и MCP-разведку.
+ Читать далее]]></summary>
+        <author>
+            <name>srzybnev</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Как мы заменили 30-минутный polling на IMAP IDLE и построили маленькую распределённую систему]]></title>
+        <id>https://habr.com/ru/articles/1065768/</id>
+        <link href="https://habr.com/ru/articles/1065768/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1065768"/>
+        <updated>2026-08-17T12:13:56.000Z</updated>
+        <summary type="html"><![CDATA[Когда-то наш почтовый загрузчик был обычным методом с @Scheduled. Раз в 30 минут он подключался к ящикам, искал новые вложения и запускал их обработку. Решение было простым, понятным и долгое время вполне рабочим.
+Через несколько итераций вокруг того же загрузчика уже существовали IMAP IDLE listener'ы, PostgreSQL leases, heartbeat экземпляров приложения, перебалансировка почтовых ящиков между pod'ами, UID checkpoints, постоянная идемпотентность и отдельная обработка FolderClosedException. В какой-то момент мы даже попробовали держать несколько IMAP-соединений к одному ящику, но затем сознательно удалили эту часть архитектуры.
+Это история не о том, как мы «заменили polling на push» одной настройкой. Она о том, как безобидный интеграционный адаптер постепенно превратился в маленькую распределённую систему. И о границе параллелизма, которую мы сначала провели не там.
+ Получить письмо]]></summary>
+        <author>
+            <name>TrueRuslan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Возвращение короля: разбираемся, что такое Qwen3.8 27B]]></title>
+        <id>https://habr.com/ru/companies/gptunnel/articles/1071272/</id>
+        <link href="https://habr.com/ru/companies/gptunnel/articles/1071272/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071272"/>
+        <updated>2026-08-17T12:06:11.000Z</updated>
+        <summary type="html"><![CDATA[14 августа 2026 года, 15:00 UTC.
+CEO Anthropic Дарио Амодей срочно созвал заседание. Экс-глава Apple Тим Кук пожалел, что встроил в айфоны облачную Gemini, так и не дождавшись локальной модели нужного уровня. Где-то в датацентрах Alibaba щёлкнул рубильник, на Hugging Face слетел обратный отсчёт, и в мир вышла Qwen3.8-27B – новая dense-модель на 27 миллиардов параметров, которую даже прозвали «локальным Opus’ом», поскольку она позиционируется как одно из самых мощных открытых решений для локальной генерации.
+Ждали её всем миром: обратный отсчёт на huggingface, первые пиксельные пеликаны на великах – всё как положено.
+Если вкратце, это открытая (Apache 2.0) мультимодальная модель, которая понимает текст, картинки и видео, влезает в одну ооочень мощную домашнюю видеокарту, а временами по бенчмаркам обгоняет закрытые облачные модели уровня Claude Opus 4.6.
+Если не вкратце – читайте дальше, потому что там есть и триумф, и зависания на 49 минут раздумий!
+ Читать далее]]></summary>
+        <author>
+            <name>Master_AI (GPTunneL)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Как диагностировать тормоза Linux‑сервера без перезагрузки вслепую]]></title>
+        <id>https://habr.com/ru/companies/otus/articles/1068842/</id>
+        <link href="https://habr.com/ru/companies/otus/articles/1068842/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1068842"/>
+        <updated>2026-08-17T12:05:55.000Z</updated>
+        <summary type="html"><![CDATA[Сервер отвечает с задержкой, сайт еле открывается, а причина нагрузки неочевидна. В статье разберём пошаговую диагностику Linux‑сервера: как проверить CPU, память и диск с помощью top, free, vmstat, iostat и iotop, найти процесс‑виновник и понять, куда копать дальше. 
+ Читать далее]]></summary>
+        <author>
+            <name>Andrey_Biryukov (OTUS)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[10 мифов вокруг GEO, которые мешают продвижению бизнеса в ИИ-поиске]]></title>
+        <id>https://habr.com/ru/companies/click/articles/1071270/</id>
+        <link href="https://habr.com/ru/companies/click/articles/1071270/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071270"/>
+        <updated>2026-08-17T12:04:50.000Z</updated>
+        <summary type="html"><![CDATA[С развитием генеративных нейросетей в Сети появилось множество советов, как повысить видимость сайта в ИИ-поиске. Проблема в том, что многие рекомендации пока не подтверждены или вовсе основаны на мифах, которые постепенно начали воспринимать как проверенные факты.
+В этой статье эксперты click.ru:
+ Читать далее]]></summary>
+        <author>
+            <name>Clickru (Click.ru)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2–3 тысячи сборок в день: как мы превратили Kafka из компонента в инфраструктурную платформу]]></title>
+        <id>https://habr.com/ru/companies/diasoft_company/articles/1071268/</id>
+        <link href="https://habr.com/ru/companies/diasoft_company/articles/1071268/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071268"/>
+        <updated>2026-08-17T12:02:10.000Z</updated>
+        <summary type="html"><![CDATA[Apache Kafka можно бесплатно скачать, развернуть и подключить к приложениям. При небольшом проекте этого может быть достаточно: создали несколько топиков, настроили потребителей — и обмен сообщениями работает.
+Но по мере роста инфраструктуры Kafka перестает быть просто брокером. От нее начинают зависеть функциональность микросервисов, интеграции, тестовые стенды, CI/CD‑процессы и рабочие системы. Вместе с нагрузкой растет и список вопросов: как обновлять кластеры, отслеживать очереди, устранять уязвимости и восстанавливать работу после отказа.
+Меня зовут Илья Виссарионов, я директор департамента «Аппаратно‑системная платформа» компании «Диасофт», и в этой статье расскажу, как мы используем Kafka в DevOps‑инфраструктуре «Диасофта», какие проблемы обнаружили при эксплуатации под высокой нагрузкой и почему в итоге стали рассматривать брокер сообщений не как отдельный open‑source‑компонент, а как полноценную инфраструктурную платформу.
+ Читать далее]]></summary>
+        <author>
+            <name>diasoft (Диасофт)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[От прототипа до продукта: как на самом деле проектируют приложения на базе LLM]]></title>
+        <id>https://habr.com/ru/companies/bhv_publishing/articles/1071262/</id>
+        <link href="https://habr.com/ru/companies/bhv_publishing/articles/1071262/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071262"/>
+        <updated>2026-08-17T12:01:47.000Z</updated>
+        <summary type="html"><![CDATA[Самое опасное в больших языковых моделях — то, насколько легко с ними можно что-нибудь сделать. Вернее, даже не так: прототип продукта с LLM сделать удивительно легко, а вот хорошее приложение на его основе — удивительно трудно. Именно об этот подводный камень и спотыкаются большинство разработчиков на этапе перехода от минимально работоспособной модели к созданию полноценного продукта. Причина, на самом деле, банальна: между «смотрите, я за вечер навайбкодил работающего чат-бота» и «этим ботом ежедневно пользуются десять тысяч человек» лежит примерно такая же пропасть, как между собранным в гараже прототипом карта из водопроводных труб с мотором от триммера и гоночным болидом «Формулы-1».
+Именно эта проблема рассматривается в книге Сухаса Пая «Разработка приложений на базе больших языковых моделей. Целостный подход к LLM», вышедшей недавно в издательстве «БХВ».
+ А теперь - чуть подробнее!]]></summary>
+        <author>
+            <name>BHV_publishing (Издательство БХВ)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Чему меня научили дети, пока я пытался научить их программированию]]></title>
+        <id>https://habr.com/ru/companies/selectel/articles/1063372/</id>
+        <link href="https://habr.com/ru/companies/selectel/articles/1063372/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1063372"/>
+        <updated>2026-08-17T12:00:55.000Z</updated>
+        <summary type="html"><![CDATA[Полтора месяца ушло на то, чтобы среди кучи вакансий, не стыкующихся с моей учебой в универе, найти этот бриллиант. Вернулся я однажды с пар, сижу на бирже труда — и нахожу объявление: «Учитель информатики для детей, без опыта, требования — студент вуза на технической специальности».
+Шел на собеседование с мыслью: раз я инженер, с техникой работаю нормально, то и детям объяснить получится, слова попроще подберу. Никогда до этого отклика я всерьез не рассматривал себя в роли преподавателя. Да и какой из меня преподаватель — для этого вроде педагогический нужно оканчивать.
+Через пару дней такой работы я был приятно удивлен. Я думал, что шел на эту работу как на простой способ заработка: отработал норму — свободен. А по факту я стал смотреть на мир совсем другими глазами. Этому меня научили дети.
+ Читать далее]]></summary>
+        <author>
+            <name>Ka1seR (Selectel)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Где заканчиваются отчёты и начинается безопасность: аудит ИБ без «бумажной пыли»]]></title>
+        <id>https://habr.com/ru/companies/ozontech/articles/1070378/</id>
+        <link href="https://habr.com/ru/companies/ozontech/articles/1070378/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1070378"/>
+        <updated>2026-08-17T12:00:16.000Z</updated>
+        <summary type="html"><![CDATA[Всем привет! Меня зовут Алёна, я руководитель группы аналитики отдела Compliance и безопасности данных в Ozon. Звучит длинно, поэтому мы с командой называем себя просто датасеками — от Data Security. В информационной безопасности я почти 13 лет, из них 4,5 года в Ozon. До этого больше восьми лет работала в интеграторе и занималась в основном персональными данными и банковской безопасностью — вопросами чистого compliance. Сейчас у меня команда из 11 человек, и мы занимаемся безопасностью данных в Ozon. 
+Сегодня хочу поговорить об одной важной теме — аудитах безопасности данных. Речь не про пентесты, нет, у нас совсем другая история. Мы смотрим на безопасность данных — и персональных, и финансовых, и любых других данных, которые нужно защищать по требованиям закона, компании или здравого смысла. Расскажу вам о сложностях и о том, как мы с ними справлялись.
+ Читать далее]]></summary>
+        <author>
+            <name>alkolobova (Ozon Tech)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Расследование по Kubernetes events, которых уже нет]]></title>
+        <id>https://habr.com/ru/articles/1071266/</id>
+        <link href="https://habr.com/ru/articles/1071266/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071266"/>
+        <updated>2026-08-17T11:59:44.000Z</updated>
+        <summary type="html"><![CDATA[Высокий уровень observability в наше время — такое же необходимое условие для любого проекта, как и высокая доступность или производительность. Мы стараемся собрать и сохранить максимум метрик, чтобы понимать, в каком состоянии находится наша система и куда это состояние дрейфует. Собираем максимум логов, чтобы понимать, что происходило. Но даже когда логов и метрик настолько много, что для них собираются свои логи и метрики, иногда этого бывает недостаточно. Иногда нужно понимать не ЧТО и КОГДА, а ПОЧЕМУ.
+В мире Kubernetes такой источник есть — events: именно они отвечают, почему под перезапустился, почему не смог подняться, почему не встал на ноду. Парадоксально, но эти чрезвычайно важные сведения довольно неудобно извлекать, а по умолчанию через час они уже исчезают. С этим обычно мирятся — ровно до утра, когда нужно объяснить, почему ночью упали сборки. Дальше история одного такого утра: начинается она с двух неудачных пайплайнов, заканчивается часовым окном нестабильности, задевшим 46 namespace'ов, и ни одной улики к моменту расследования в кластере уже не остаётся.
+ Читать далее]]></summary>
+        <author>
+            <name>lev-stas</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Работа с переменными в Angie]]></title>
+        <id>https://habr.com/ru/articles/1071260/</id>
+        <link href="https://habr.com/ru/articles/1071260/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1071260"/>
+        <updated>2026-08-17T11:58:28.000Z</updated>
+        <summary type="html"><![CDATA[Переменные в сервере Angie используются для расширенного управления обработкой запросов, более гибких конфигураций, а также получения подробной информации о клиентах и запросах. Постараемся разобраться со всем спектром возможностей переменных в Angie.
+ Читать далее]]></summary>
+        <author>
+            <name>Nickmob</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Девять крупнейших американских ИТ-компаний накопили около $3 трлн обязательств, которые пока не отражены на их балансах — WSJ]]></title>
+        <id>3082662</id>
+        <link href="https://vc.ru/money/3082662-krupneishie-it-kompanii-ssha-nakopili-obiazatelstva-po-ii?from=rss"/>
+        <updated>2026-08-17T10:46:34.000Z</updated>
+        <summary type="html"><![CDATA[Большая часть расходов связана с финансированием ИИ-инфраструктуры.]]></summary>
+        <author>
+            <name>Данила Бычков</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[«Яндекс Go» начал тестировать в Подмосковье проверку возраста через Госуслуги для аренды электросамокатов]]></title>
+        <id>3082610</id>
+        <link href="https://vc.ru/transport/3082610-yandeks-go-proverka-vozrasta-gosuslugi-samokaty?from=rss"/>
+        <updated>2026-08-17T10:01:46.000Z</updated>
+        <summary type="html"><![CDATA[К 30 сентября 2026 года делать это должны будут все кикшеринги в Московской области.]]></summary>
+        <author>
+            <name>Евгения Евсеева</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Суд заочно приговорил основателя автодилера «Рольф» Сергея Петрова к девяти годам колонии]]></title>
+        <id>3082350</id>
+        <link href="https://vc.ru/legal/3082350-sud-prigovoril-sergeya-petrova-osnovatelya-avtodilera-rolf-k-kolonii?from=rss"/>
+        <updated>2026-08-17T08:52:43.000Z</updated>
+        <summary type="html"><![CDATA[Сейчас Петров находится за пределами России.]]></summary>
+        <author>
+            <name>Евгения Евсеева</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[FT: сотрудники OpenAI недовольны реорганизациями на фоне подготовки к IPO — некоторые задумывались о возможности уйти из компании после обратного выкупа акций]]></title>
+        <id>3082319</id>
+        <link href="https://vc.ru/hr/3082319-sotrudniki-openai-nedovolny-reorganizatsiyami?from=rss"/>
+        <updated>2026-08-17T08:33:52.000Z</updated>
+        <summary type="html"><![CDATA[В компании растёт напряжение из-за частых изменений.]]></summary>
+        <author>
+            <name>Данила Бычков</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[«Точка Банк» запустил выплаты зарплаты через СБП — для перевода понадобится только номер телефона сотрудника]]></title>
+        <id>3082245</id>
+        <link href="https://vc.ru/money/3082245-tochka-bank-zarplatnye-vyplaty-cherez-sbp?from=rss"/>
+        <updated>2026-08-17T08:13:46.000Z</updated>
+        <summary type="html"><![CDATA[Вместо полных реквизитов.]]></summary>
+        <author>
+            <name>Евгения Евсеева</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[День 1636: онлайн-продажи одежды и обуви в России начали расти медленнее, Мосбиржа запустит «индекс спокойствия» для начинающих инвесторов]]></title>
+        <id>3081924</id>
+        <link href="https://vc.ru/money/3081924-onlain-prodazhi-odezhdi-i-obuvi-v-rossii-zamedlyayut-rost?from=rss"/>
+        <updated>2026-08-17T05:06:30.000Z</updated>
+        <summary type="html"><![CDATA[Собираем новости, события и мнения о рынках, банках и реакциях компаний.]]></summary>
+        <author>
+            <name>Евгения Евсеева</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Релиз ядра Linux 7.2]]></title>
+        <id>https://www.opennet.ru/opennews/art.shtml?num=65937</id>
+        <link href="https://www.opennet.ru/opennews/art.shtml?num=65937"/>
+        <updated>2026-08-17T04:55:15.000Z</updated>
+        <summary type="html"><![CDATA[После двух месяцев разработки Линус Торвальдс  представил  релиз ядра Linux 7.2. Среди наиболее заметных изменений: механизм потоковой передачи данных USB4STREAM, оптимизации производительности btrfs, xfs и ext4, продолжение удаления кода для поддержки CPU i486, возможность создания вложенных планировщиков  SCHED_EXT, снижено потребление памяти в подсистеме подкачки, ускорены неименованные каналы, поддержка расширений Intel MBEC  и AMD GMET в KVM, удаление протокола AppleTalk, начальная поддержка HDMI 2.1 FRL в драйвере AMDGPU.]]></summary>
+        <author>
+            <name>OpenNews.opennet.ru: Общая лента новостей</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GWA повысила прибыль во втором полугодии 2026 года]]></title>
         <id>https://ru.investing.com/news/transcripts/article-93CH-3354932</id>
@@ -20357,590 +21054,6 @@ WUD оказался ближе всего к тому, что я хотел, и
  Читать далее]]></summary>
         <author>
             <name>Darka</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ЭВМ в народном хозяйстве: поколения, тяжёлая промышленность и энергетика]]></title>
-        <id>https://habr.com/ru/companies/ruvds/articles/1048862/</id>
-        <link href="https://habr.com/ru/companies/ruvds/articles/1048862/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1048862"/>
-        <updated>2026-07-19T13:01:16.000Z</updated>
-        <summary type="html"><![CDATA[В первой части статьи мы обсудили те вводные, с которыми столкнулся Советский Союз на заре появления ЭВМ. Вспомнили про негативное отношение к кибернетике, страх бюрократии и знаковых людей, которые меняли ситуацию. В этой статье мы продолжим тему: сначала пройдемся по четырем поколениям ЭВМ, которые использовались в СССР, а затем посмотрим, как эти машины работали на земле — в металлургии, машиностроении, энергетике и нефтянке.
- Читать далее]]></summary>
-        <author>
-            <name>TichyProtocol (RUVDS.com)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Как некрасивую таблицу в Excel'е превратить в красивый редактируемый слайд в помощью ИИ]]></title>
-        <id>https://habr.com/ru/articles/1060644/</id>
-        <link href="https://habr.com/ru/articles/1060644/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060644"/>
-        <updated>2026-07-19T12:55:32.000Z</updated>
-        <summary type="html"><![CDATA[Допустим, у вас есть сложная и неаккуратная таблица в Excel, которую нужно разместить на слайде презентации. Обычный копипаст из Excel в PowerPoint здесь не слишком помогает. На помощь приходит ChatGPT.
- Читать далее]]></summary>
-        <author>
-            <name>fast_head</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Температурное поле круглой конфорки. Визуализация]]></title>
-        <id>https://habr.com/ru/articles/1059636/</id>
-        <link href="https://habr.com/ru/articles/1059636/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1059636"/>
-        <updated>2026-07-19T12:05:53.000Z</updated>
-        <summary type="html"><![CDATA[В одной из предыдущих статей https://habr.com/p/1016120/ мы рассчитали температурное поле T(r, z, t)   круглой конфорки аналитическими методами. В этой статье мы сделаем его компьютерную визуализацию.
- Читать далее]]></summary>
-        <author>
-            <name>Maximka200</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Мобильный интернет быстрее, чем в Европе, но сотовые операторы работают на дизеле — факты об африканском 5G]]></title>
-        <id>https://habr.com/ru/companies/vasexperts/articles/1060516/</id>
-        <link href="https://habr.com/ru/companies/vasexperts/articles/1060516/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060516"/>
-        <updated>2026-07-19T12:01:04.000Z</updated>
-        <summary type="html"><![CDATA[На первый взгляд может показаться, что «5G в Африке три раза быстрее, чем в Британии» — это что-то из комиксов про Ваканду. А понятия «надежное соединение» и «Сомали» вообще не могут соседствовать в одном предложении. Тем не менее, африканским телекомам есть, чем удивить — ниже собрали несколько любопытных фактов о том, как обстоят дела в регионе, который готовится показать самые высокие темпы роста абонентов 5G в мире.
- Читать далее]]></summary>
-        <author>
-            <name>VASExperts (VAS Experts)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Пятая кнопка за вечер. Архитектура фронтенда под контекст LLM]]></title>
-        <id>https://habr.com/ru/articles/1060634/</id>
-        <link href="https://habr.com/ru/articles/1060634/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060634"/>
-        <updated>2026-07-19T11:53:18.000Z</updated>
-        <summary type="html"><![CDATA[К концу второго месяца vibe coding на фронте моего пет-проекта жили пять компонентов кнопки, четыре спиннера, компонент страницы на 700 строк и шапка, которая показывала один баланс, пока модалка рядом показывала другой. LLM-агент писал всё это уверенно, быстро и с хорошим стилем кода. Фронтенд под LLM деградирует даже быстрее бэкенда — и тому есть причины: от качества обучающей выборки, где вперемешку лежат три поколения React, до самой природы JSX, где разметка, логика и состояние легально живут в одном файле.
-Под катом — что в итоге сработало: Feature-Sliced Design, урезанный до трёх слоёв, как карта для агента; dependency-cruiser в роли архитектурного контракта, который нельзя нарушить; кодогенерация API-клиента из OpenAPI вместо доменной модели; за что я простил Tailwind; и честно — про самое слабое место конвейера: агент, который верстает вслепую. Это продолжение статьи про бэкенд, но читается и само по себе.
- Читать далее]]></summary>
-        <author>
-            <name>kotafey</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Мешают ли нейросети мышлению?]]></title>
-        <id>https://habr.com/ru/articles/1060560/</id>
-        <link href="https://habr.com/ru/articles/1060560/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060560"/>
-        <updated>2026-07-19T11:30:10.000Z</updated>
-        <summary type="html"><![CDATA[Однажды знойным летним вечером я оказался на лекции по искусственному интеллекту. Лектор - профессор СПбГУ - начал с краткого обзора истории этой науки с середины прошлого века и закончил красочным описанием тех чудес, которые нам (обязательно) принесут нейросети в будущем.
-Я большой нейроскептик: я был бы рад, если бы в один момент все ИИ-компании просто испарились, как не было их, и мы вернулись в эпоху мясных копирайтеров и недооплачиваемых стажёров. Однако, кажется, этого в ближайшем будущем не предвидится, и потому приходится хотя бы одним глазком приглядывать - что там в этой области происходит?
- Читать далее]]></summary>
-        <author>
-            <name>CatScience</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Как мы научили агента парсить данные, к которым нет доступа через API]]></title>
-        <id>https://habr.com/ru/articles/1060626/</id>
-        <link href="https://habr.com/ru/articles/1060626/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060626"/>
-        <updated>2026-07-19T11:28:54.000Z</updated>
-        <summary type="html"><![CDATA[Есть данные, которые вроде бы доступны, но программно их не взять. Они отображаются в браузере, их видно на графиках, по ним можно кликать мышкой. Но API для них либо не существует, либо он закрыт.
-Раньше это означало ручной анализ: открываешь плеер, смотришь, как пользователь скроллил страницу, на чем задерживался и где кликал. Триста посещений — триста раз открыть плеер. А если нужно проанализировать поведение за месяц с тысячами визитов, задача превращается в нерешаемую. Теперь эту работу можно делегировать агенту. 
-Классический пример — Вебвизор Яндекс.Метрики. Посещения, скроллы, клики — все это можно смотреть в плеере, но выгрузить поведение пользователей штатными средствами нельзя.
- Читать далее]]></summary>
-        <author>
-            <name>ai_fucked_up</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Как изменилась жизнь интернет-безопасников с приходом QUIC? IDS и threat analysing в реалиях HTTP/3]]></title>
-        <id>https://habr.com/ru/articles/1060624/</id>
-        <link href="https://habr.com/ru/articles/1060624/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060624"/>
-        <updated>2026-07-19T11:24:27.000Z</updated>
-        <summary type="html"><![CDATA[Обзорный анализ “нового” протокола HTTP/3 и подходов к анализу трафика и защите информационных систем построенных на его основе.
-Фингерпринтинг выступает одной из больших тем статьи, ему уделено отдельное внимание.
- Читать]]></summary>
-        <author>
-            <name>slwr66</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Как ИИ помог автоматизировать контент с помощью Pandoc, bash и пары утилит]]></title>
-        <id>https://habr.com/ru/companies/yoomoney/articles/1060614/</id>
-        <link href="https://habr.com/ru/companies/yoomoney/articles/1060614/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060614"/>
-        <updated>2026-07-19T11:04:34.000Z</updated>
-        <summary type="html"><![CDATA[Привет, на связи Влада, веб-специалист ЮMoney. Год назад я рассказывала на Хабре, как контент-менеджеру пригодятся терминал, Git и несколько десятков строк кода.
-С тех пор многое изменилось. В работе появился ИИ — инструмент, снизивший порог входа в автоматизацию. Не потому, что пишет код вместо нас, а потому, что ускорил создание небольших утилит под наши процессы.
-Расскажу, как из одного bash-скрипта вырос набор внутренних инструментов для контент-команды. Идеи пригодятся техническим писателям, контент-менеджерам и всем, кто регулярно работает с Markdown, XML и CMS.
- Читать далее]]></summary>
-        <author>
-            <name>zusmanzus (ЮMoney)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Личное облако на Proxmox: как собрать себе фотохостинг с мобильным клиентом]]></title>
-        <id>https://habr.com/ru/articles/1060610/</id>
-        <link href="https://habr.com/ru/articles/1060610/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060610"/>
-        <updated>2026-07-19T10:58:26.000Z</updated>
-        <summary type="html"><![CDATA[В прошлой статье я писал как перенести свою музыку себе домой, а это руководство для того, кто решил забрать свой фотоархив домой. От пустого LXC-контейнера до работающего Immich: свой «Google Photos» с умным поиском и лицами на встроенном GPU, доступ с телефона из любой точки мира — и перенос семнадцати тысяч фотографий из Google без потери единого кадра и с восстановлением геолокации.
- Читать далее]]></summary>
-        <author>
-            <name>3draven</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[Перевод] В Корее произошла первая в мире забастовка против использования гуманоидных роботов на производстве]]></title>
-        <id>https://habr.com/ru/articles/1060608/</id>
-        <link href="https://habr.com/ru/articles/1060608/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060608"/>
-        <updated>2026-07-19T10:56:21.000Z</updated>
-        <summary type="html"><![CDATA[Когда в январе компания Hyundai Motor представила своего нового гуманоидного робота-рабочего по имени «Атлас», десятки тысяч корейских авторабочих с изумлением наблюдали за тем, как этот робот ростом 188 см вышагивал по сцене выставки, поворачивая суставы на 360 градусов. Реакция профсоюза была категоричной: «Атлас» никогда не появится на производственной линии без предварительного согласия рабочих.
-На этой неделе авторабочие Hyundai в Южной Корее объявили частичную забастовку. Это первая в автомобильной промышленности остановка работы завода, связанная с использованием гуманоидных роботов.
-Улицы главного автомобильного производственного центра Hyundai в городе Ульсан украшены плакатами с требованием «превентивных мер» в ответ на эту угрозу. По окончании частичной забастовки в среду участники переговоров примут решение о дальнейших шагах по выходу из продолжающегося уже несколько месяцев тупика, связанного с заработной платой, искусственным интеллектом и технологиями, которые могут коренным образом изменить будущее автомобилестроения.
-Тот факт, что у Atlas нет точной даты внедрения в Южной Корее, не имеет большого значения для Бюн Чжун-хвана, одного из ведущих переговорщиков со стороны профсоюза. «Мы должны подготовиться, чтобы обеспечить наличие необходимых мер защиты», — сказал Бюн, генеральный секретарь профсоюза.
- Читать далее]]></summary>
-        <author>
-            <name>SLY_G</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[День 1607: Москва попала в топ-10 городов по росту цен на жильё по версии Deutsche Bank Research Institute]]></title>
-        <id>3034779</id>
-        <link href="https://vc.ru/money/3034779-moskva-v-top-10-gorodov-po-rostu-tsen-na-zhilyo?from=rss"/>
-        <updated>2026-07-19T10:47:50.000Z</updated>
-        <summary type="html"><![CDATA[Собираем новости, события и мнения о рынках, банках и реакциях компаний.]]></summary>
-        <author>
-            <name>Полина Лааксо</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hugging Face взломал автономный ИИ-агент — защищались тоже с помощью ИИ]]></title>
-        <id>https://habr.com/ru/articles/1060606/</id>
-        <link href="https://habr.com/ru/articles/1060606/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060606"/>
-        <updated>2026-07-19T10:44:08.000Z</updated>
-        <summary type="html"><![CDATA[Крупнейшая в мире площадка для ИИ-моделей Hugging Face сообщила о вторжении в свою  инфраструктуру, которое отличалось от всего, с чем компания сталкивалась раньше, одной деталью: атаку от начала и до конца провела автономная система ИИ-агентов. Причем и поймала, и разобрала атаку компания во многом тоже с помощью ИИ.
- Читать далее]]></summary>
-        <author>
-            <name>runaway_llm</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Интерфейс, который покорит многих]]></title>
-        <id>https://habr.com/ru/articles/1060550/</id>
-        <link href="https://habr.com/ru/articles/1060550/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060550"/>
-        <updated>2026-07-19T10:32:25.000Z</updated>
-        <summary type="html"><![CDATA[Набросок этой статьи писался под влиянием подозрительных веществ лекарств,  когда я ещё находился в военном госпитале после ранения, недавно выйдя из месячной комы. Обездвиженный, наглухо лишённый возможности пользоваться своей левой половиной тела, я вкусил все радости от использования современных смартфонов..., возненавидев их. Тогда я понял: пора что-то менять в нашей жизни к лучшему. 
-Хотя если быть точным, мысль, развиваемая в этой  статье, посещала меня задолго до ранения, но только сейчас мне пришла идея как красиво это упаковать.
-Я хочу ниже не только помечтать о новом подходе к интерфейсам, но и предложить идею реализации, которую ты, читатель, сможешь осилить уже сейчас.
- Неинвазивный нейроинтерфейс]]></summary>
-        <author>
-            <name>KaminskyIlya</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Как я обуздал Vibe Coding: заставляем Grok и Codex делать ревью за Claude Code]]></title>
-        <id>https://habr.com/ru/articles/1060604/</id>
-        <link href="https://habr.com/ru/articles/1060604/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060604"/>
-        <updated>2026-07-19T10:28:09.000Z</updated>
-        <summary type="html"><![CDATA[Сегодня из каждого утюга звучит термин vibe coding — расслабленная, итеративная разработка в диалоге с ИИ, когда ты просто описываешь хотелки, а агент сам пишет, правит и деплоит. Звучит как магия, но на практике попытка скормить агенту большой объем работы за один заход почти всегда заканчивается результатом категории «ну, вроде работает».
- Читать далее]]></summary>
-        <author>
-            <name>mwgg</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Оплата зарубежных подписок из РФ в 2026: замерил 13 посредников, нашёл одну формулу]]></title>
-        <id>https://habr.com/ru/articles/1060600/</id>
-        <link href="https://habr.com/ru/articles/1060600/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060600"/>
-        <updated>2026-07-19T10:08:30.000Z</updated>
-        <summary type="html"><![CDATA[Мне нужно было оплатить Zoom для команды — годовой Workplace Pro, $169.90. Написал посреднику, которого посоветовали в чате. Ответ пришёл быстро: «Да, по стоимости 18 422 Рубля, оплачиваем?»
-По курсу ЦБ $169.90 — это 13 320 ₽. Откуда ещё пять тысяч? «Курс и комиссия», — ответил менеджер. Какой курс, какая комиссия — не ответил.
-Я плачу за ChatGPT, Zoom и Steam и переплачиваю непонятно кому непонятно сколько. Поэтому я сделал то, что делает любой инженер, столкнувшийся с чёрным ящиком: запросил стоимость у 13 посредников и виртуальных карт и записал ответы.
-В итоге восстановил (реверс-инженернул?) формулу, по которой посредники считают свои «индивидуальные» комиссии. А еще сделал простой калькулятор, где видно, какой способ оплаты лучше подходит для какого сервиса (это в конце).
- Читать далее]]></summary>
-        <author>
-            <name>Ipukhov</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Психологическая цена непрерывных преобразований: Может ли изменений быть слишком много?]]></title>
-        <id>https://habr.com/ru/articles/1060472/</id>
-        <link href="https://habr.com/ru/articles/1060472/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060472"/>
-        <updated>2026-07-19T10:00:08.000Z</updated>
-        <summary type="html"><![CDATA[Есть такой термин Relentless Improvements, который можно перевести как непрерывные/безостановочные/неустанные/непримеримые/безжалостные/ изменения. 
-Те кто связаны c Agile, скорее всего сразу вспомнят Scaled Agile Framework (SAFe), и будут правы. Потому, что именно этот фрейм сделал термин массовым, особенно востребованным при изменениях, но заложил глубинную бомбу под многие продуктовые, ИТ и близкие к ним трансформации, определяя непрерывные изменения как стандарт организационной жизни.  
-Причем наш окружающий мир сам стал похож на одно постоянное безостановочное изменение (то ковид, то СВО, то кризисы перепроизводства, то золотуха). Это также заставляет компании постоянно пересматривать способы работы. И эти самые relentless изменения в организациях становятся действительной нормой.
-Меняется структура, меняются роли, приоритеты, процессы. Команды пересобираются, инициативы запускаются... И в какой-то момент организация переходит в режим непрерывной перестройки.
-Подобные состояние можно рассматривать как хроническое воздействие неопределённости и потерь на человека и рабочие группы, что не может пройти без следа как для отдельных людей, так и для команд/лидеров/результатов бизнеса. 
-Каждая отдельная перестройка может быть вполне переносимой. Но когда это становятся фоном, психика людей перестаёт воспринимать происходящее как временный этап и начинает жить в режиме постоянной подстройки и адаптации.  
-За подобную "гибкость" приходится платить
-Предлагаю порефлексировать в статье чем платить, почему это происходит и что с этим можно сделать.
- Читать далее]]></summary>
-        <author>
-            <name>selyaev_alec</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Релиз языка программирования V 0.5.2]]></title>
-        <id>https://www.opennet.ru/opennews/art.shtml?num=65929</id>
-        <link href="https://www.opennet.ru/opennews/art.shtml?num=65929"/>
-        <updated>2026-07-19T09:38:41.000Z</updated>
-        <summary type="html"><![CDATA[Состоялся релиз статически типизированного языка программирования V 0.5.2 (vlang). Основными целями при создании V были простота изучения и использования, высокая читаемость, быстрая компиляция, повышенная безопасность, эффективная разработка, кроссплатформенное использование, улучшенное взаимодействие с языком C, лучшая обработка ошибок, отключаемый сборщик мусора (GC), современные возможности и более удобное сопровождение программ. Проект также развивает свою графическую библиотеку и пакетный менеджер. Код компилятора, библиотек и сопутствующих инструментов открыт под лицензией MIT.]]></summary>
-        <author>
-            <name>OpenNews.opennet.ru: Общая лента новостей</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Nvidia в мире автомобилей: как CATL стала одним из главных бенефициаров зелёного перехода и крупнейшим производителем батарей в мире]]></title>
-        <id>3033340</id>
-        <link href="https://vc.ru/transport/3033340-nvidia-i-catl-liderstvo-v-proizvodstve-batarey-dlya-elektromobiley?from=rss"/>
-        <updated>2026-07-19T08:28:14.000Z</updated>
-        <summary type="html"><![CDATA[На её долю приходится около 40% глобального рынка тяговых батарей для электромобилей, а используют их не только китайские компании, но и западные гиганты вроде Ford, Tesla и BMW, потому что понимают: CATL «опережает всех».]]></summary>
-        <author>
-            <name>Тая Сирина</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Разработчик GNOME Calendar обвинил Linux Mint в игнорировании проблемы с устаревшим пакетом]]></title>
-        <id>https://www.opennet.ru/opennews/art.shtml?num=65930</id>
-        <link href="https://www.opennet.ru/opennews/art.shtml?num=65930"/>
-        <updated>2026-07-19T07:51:27.000Z</updated>
-        <summary type="html"><![CDATA[Один из разработчиков GNOME Calendar (Hari Rana) вынес на публику конфликт с сопровождающим пакет в дистрибутиве Linux Mint. Конфликт обусловлен тем, что в Linux Mint поставляется пакет с изменённой устаревшей версией GNOME Calendar. Несмотря  на наличие специфичных изменений, приложение поставляется под именем GNOME Calendar, из-за чего у пользователей возникает впечатление об использовании оригинального проекта.]]></summary>
-        <author>
-            <name>OpenNews.opennet.ru: Общая лента новостей</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Wildberries анонсировал первые меры поддержки для продавцов, которые работали с атакованными складами]]></title>
-        <id>3034621</id>
-        <link href="https://vc.ru/marketplace/3034621-podderzhka-prodavtsov-wildberries-posle-atak-na-sklady?from=rss"/>
-        <updated>2026-07-19T07:42:44.000Z</updated>
-        <summary type="html"><![CDATA[Это центры «Котовск» и «Электросталь».]]></summary>
-        <author>
-            <name>Полина Лааксо</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Южнокорейские акции — ключевой индикатор настроений ИИ-рынка]]></title>
-        <id>https://ru.investing.com/news/stock-market-news/article-3309675</id>
-        <link href="https://ru.investing.com/news/stock-market-news/article-3309675"/>
-        <updated>2026-07-19T01:57:58.000Z</updated>
-        <author>
-            <name>Investing.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Разбор Mimolet: что здесь удобно, а что стоит переделать]]></title>
-        <id>https://habr.com/ru/articles/1060552/</id>
-        <link href="https://habr.com/ru/articles/1060552/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060552"/>
-        <updated>2026-07-19T01:51:29.000Z</updated>
-        <summary type="html"><![CDATA[Mimolet выглядит как обычное приложение для знакомств с вертикальной лентой анкет. Но если пройти регистрацию и открыть несколько разделов, становится понятно, что одной лентой дело не ограничивается. Здесь есть подробные профили, нормальные чаты, публичные группы, встроенные звонки, ИИ-функции и отдельная система модерации. В разборе отмечу удобные решения, спорные функции и вопросы, на которые сервису стоит отвечать понятнее.
- Читать разбор]]></summary>
-        <author>
-            <name>InfernoMonk</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Samsung Electronics America сокращает 739 сотрудников в Джерси]]></title>
-        <id>https://ru.investing.com/news/company-news/article-3309674</id>
-        <link href="https://ru.investing.com/news/company-news/article-3309674"/>
-        <updated>2026-07-19T01:17:09.000Z</updated>
-        <author>
-            <name>Investing.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Зачем Stripe покупать PayPal?]]></title>
-        <id>https://ru.investing.com/news/stock-market-news/article-3309672</id>
-        <link href="https://ru.investing.com/news/stock-market-news/article-3309672"/>
-        <updated>2026-07-19T00:39:35.000Z</updated>
-        <author>
-            <name>Investing.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[США нанесли удары по Ирану после гибели двух военных]]></title>
-        <id>https://ru.investing.com/news/economy-news/article-3309669</id>
-        <link href="https://ru.investing.com/news/economy-news/article-3309669"/>
-        <updated>2026-07-18T23:50:28.000Z</updated>
-        <author>
-            <name>Investing.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Акции Tesla: насколько важен рост автобизнеса?]]></title>
-        <id>https://ru.investing.com/news/stock-market-news/article-3309667</id>
-        <link href="https://ru.investing.com/news/stock-market-news/article-3309667"/>
-        <updated>2026-07-18T23:14:20.000Z</updated>
-        <author>
-            <name>Investing.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Нейросети для улучшения качества фото: обзор 6 ИИ для апскейла и реставрации снимков и промпты]]></title>
-        <id>https://habr.com/ru/companies/studyai/articles/1057228/</id>
-        <link href="https://habr.com/ru/companies/studyai/articles/1057228/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1057228"/>
-        <updated>2026-07-18T23:05:18.000Z</updated>
-        <summary type="html"><![CDATA[Апскейл до эпохи диффузионок был честным враньем. Ты брал мыльный кадр, тянул его в редакторе, а программа просто клонировала соседние пиксели и слегка замыливала «лесенку» на краях. Ланцош, бикубик, ползунки резкости - весь этот арсенал делал одно: размазывал то, что уже было, чуть аккуратнее. Деталей, которых на снимке физически нет, взять было неоткуда. Точка.
- Читать далее]]></summary>
-        <author>
-            <name>alexlptk (StudyAI)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Кадр не обязан жить в одном времени: философия воспринимаемой задержки в игровом стриминге на примере команды EVRT]]></title>
-        <id>https://habr.com/ru/articles/1060538/</id>
-        <link href="https://habr.com/ru/articles/1060538/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060538"/>
-        <updated>2026-07-18T23:03:56.000Z</updated>
-        <summary type="html"><![CDATA[Привет! Я Артур Валиев. Мы с командой EvertyDesk размышляем над экспериментальным режимом для игрового стриминга и хотим обсудить не очередной ползунок качества, не новый пресет битрейта и не надпись Ultra Low Latency на главном экране.
-Нас интересует более странный вопрос:
- Читать далее]]></summary>
-        <author>
-            <name>vaalimusic</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Агора: что случилось за три месяца после прошлой статьи. Разбор комментариев]]></title>
-        <id>https://habr.com/ru/articles/1060534/</id>
-        <link href="https://habr.com/ru/articles/1060534/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060534"/>
-        <updated>2026-07-18T22:23:06.000Z</updated>
-        <summary type="html"><![CDATA[В прошлый раз я рассказывал, как в 15 лет с нуля написал российскую соцсеть для учеников, учителей и студентов «Агора» — тогда было 99 пользователей, около сотни SQL-миграций и куча энтузиазма. Статья неожиданно собрала 12 тысяч просмотров и почти 40 комментариев. Часть из них были просто добрыми словами, но был и один разбор — от PyXiion — на несколько экранов, по существу, без скидок на возраст. Отвечать на него сходу я тогда не стал, но за прошедшее время большая часть замечаний либо уже была исправлена, либо стала понятнее, почему сделано именно так.
-С тех пор проект вырос — не столько по пользователям (~160 человек, аудитория та же — учащиеся, педагоги, студенты), сколько по тому, что под капотом. Расскажу и про рост, и по порядку разберу, что из той критики было верным, а что — нет.
- Читать далее]]></summary>
-        <author>
-            <name>ars_stu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Прибыль KOSPI растёт. Почему же акции падают?]]></title>
-        <id>https://ru.investing.com/news/stock-market-news/article-3309666</id>
-        <link href="https://ru.investing.com/news/stock-market-news/article-3309666"/>
-        <updated>2026-07-18T21:52:41.000Z</updated>
-        <author>
-            <name>Investing.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Рынок акций  РФ закрылся падением, Индекс МосБиржи (ММВБ) не изменился]]></title>
-        <id>https://ru.investing.com/news/stock-market-news/article-3309664</id>
-        <link href="https://ru.investing.com/news/stock-market-news/article-3309664"/>
-        <updated>2026-07-18T21:20:15.000Z</updated>
-        <author>
-            <name>Investing.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Мини‑ПК на Strix Halo под параллельной нагрузкой: 236 tok/s на 32 одновременных запросах и три ошибки]]></title>
-        <id>https://habr.com/ru/articles/1060520/</id>
-        <link href="https://habr.com/ru/articles/1060520/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060520"/>
-        <updated>2026-07-18T19:52:48.000Z</updated>
-        <summary type="html"><![CDATA[Один Beelink GTR9 Pro на Ryzen AI Max+ 395 выдал 236 tok/s суммарной генерации на 32 одновременных запросах в коротких прогонах и удержал в среднем 226 tok/s за 30 минут непрерывной нагрузки без тротлинга. По дороге к этим числам я нашёл воспроизводимый провал пропускной способности, который сначала выглядел свойством одной модели, увидел, как спекулятивный декодинг на моём стеке превращается из ускорителя в налог, и трижды чуть не опубликовал неверные выводы. Каждый раз спасали контрольные замеры, все три истории здесь, в статье.
-Харнессы, конфиги, полные таблицы, значения по каждому ключевому и финальному прогону, поминутные ряды выносливости и телеметрия лежат в открытом репозитории. Логи отдельных запросов харнесс не вёл, поэтому пересчитать можно всё до уровня прогона, но не глубже. Числа сняты на одном конкретном стенде; что из этого переносится на другие стеки, а что нет, оговорено по ходу текста.  
- Читать далее]]></summary>
-        <author>
-            <name>AGmind</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Бенчмаркая регресс LINQ: обещали −19%, на четырёх машинах намерил +31%]]></title>
-        <id>https://habr.com/ru/articles/1060518/</id>
-        <link href="https://habr.com/ru/articles/1060518/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060518"/>
-        <updated>2026-07-18T19:52:07.000Z</updated>
-        <summary type="html"><![CDATA[Уважаемые читатели, в этой статье я хочу рассказать о проверке обещанного регресса LINQ в .NET 10 — и представить свои выводы.
-В dotnet/runtime с лета висит issue #117717: после перехода на .NET 10 метод с First(предикат) просел к девятке — у автора issue на Intel 13-го поколения до 19%, у Энди Эйерса из JIT-команды на Zen 4 порядка 10%. Причину команда назвала сама: связка PGO и инлайнинга, делегат предиката перестал инлайниться.
-Решение тоже озвучили: в десятке чинить не будем — сломаем другое, переносим в .NET 11. Был частичный фикс (PR #117816), после которого issue переоткрыли как #119425. Десятка при этом LTS, и в комментах закономерный вопрос: обновляться на десятку или ждать одиннадцатую.
- Читать далее]]></summary>
-        <author>
-            <name>Geronom</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Чего ждать от ЕЦБ на следующей неделе?]]></title>
-        <id>https://ru.investing.com/news/economy-news/article-3309663</id>
-        <link href="https://ru.investing.com/news/economy-news/article-3309663"/>
-        <updated>2026-07-18T19:41:41.000Z</updated>
-        <author>
-            <name>Investing.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Новые версии D7VK 2.0 и DXVK 3.0.2, реализаций Direct3D поверх API Vulkan]]></title>
-        <id>https://www.opennet.ru/opennews/art.shtml?num=65927</id>
-        <link href="https://www.opennet.ru/opennews/art.shtml?num=65927"/>
-        <updated>2026-07-18T19:22:51.000Z</updated>
-        <summary type="html"><![CDATA[Опубликован выпуск проекта D7VK 2.0, развивающего реализацию графических API Direct3D 3, 5, 6 и 7, предложенных компанией Microsoft в 1996, 1997, 1998  и 1999 годах.  D7VK работает через трансляцию вызовов в API Vulkan и позволяет при помощи Wine запускать в Linux ретро игры, завязанные на API Direct3D 3, 5, 6 и 7. Код проекта написан на языке C++ и распространяется под лицензией Zlib. В качестве основы при разработке использован  код  бэкенда d3d9 от проекта DXVK - D7VK преобразует API Direct3D 3, 5, 6 и 7 в вызовы Direct3D 9, которые затем  транслируются в API Vulkan. Разработчик не намерен добиваться включения D7VK в состав DXVK, как это было с реализациями Direct3D 8 и Direct3D 9 поверх Vulkan.]]></summary>
-        <author>
-            <name>OpenNews.opennet.ru: Общая лента новостей</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Я слышу, как модель думает]]></title>
-        <id>https://habr.com/ru/articles/1060510/</id>
-        <link href="https://habr.com/ru/articles/1060510/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060510"/>
-        <updated>2026-07-18T18:36:05.000Z</updated>
-        <summary type="html"><![CDATA[Я часто ловлю тонкий, почти на грани слышимости писк, когда работаю с LLM на своем MacBook Pro. Иногда — когда вроде бы вообще ничего не запускал. Довольно долго подозревал, что профдеформация переросла в галлюцинацию.
-Оказалось — нет, это физика.
- Читать далее]]></summary>
-        <author>
-            <name>jtprogru</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Как русские «Героев» спасали: история разработки Heroes of Might and Magic V]]></title>
-        <id>https://habr.com/ru/companies/timeweb/articles/1060508/</id>
-        <link href="https://habr.com/ru/companies/timeweb/articles/1060508/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060508"/>
-        <updated>2026-07-18T18:05:59.000Z</updated>
-        <summary type="html"><![CDATA[2003-й год. В мире 8 000 человек болеют атипичной пневмонией, США начинают военную операцию в Ираке, Санкт-Петербург празднует трёхсотлетие города, а в игровой индустрии громкое событие: торжественно банкротится студия 3DO, которая владела правами на культовую серию Heroes of Might and Magic. New World Computing — те самые волшебники, что подарили миру первые четыре части, — закрываются. Миллионы фанатов по всему миру одновременно хватаются за сердце и тянутся за валерьянкой. Кажется, всё — занавес, можно расходиться, всего хорошего и спасибо за рыбу.
-Но тут на сцену выходит французский гигант Ubisoft и за УМОПОМРАЧИТЕЛЬНУЮ сумму в 1,3 миллиона долларов покупает права на франшизу. По меркам игровой индустрии это, конечно же, копейки, так что юбикам сильно повезло урвать такой шикарный лот. И вот тут начинается самое интересное: кому, собственно, поручить делать новых «Героев»? Ответ, как говорится, убил. Французы посмотрели на восток и выбрали московскую студию Nival Interactive.
- Читать далее]]></summary>
-        <author>
-            <name>GeeksCat (Timeweb Cloud)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Уроки риска от Питера Бернстайна]]></title>
-        <id>https://habr.com/ru/articles/1059990/</id>
-        <link href="https://habr.com/ru/articles/1059990/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1059990"/>
-        <updated>2026-07-18T17:50:58.000Z</updated>
-        <summary type="html"><![CDATA[Для инвесторов «Уоррен» может означать только председателя Berkshire Hathaway; «Джек» — основателя Vanguard Group. А до своей смерти в 2009 году «Питер» означало Питера Бернстайна: экономиста, историка, мыслителя в области инвестиций и одного из самых мудрых и философских людей на Уолл-стрит. Питер видел всё, встречался со всеми, изучал всё и многие даже из великих уверены, что он разобрался в риске лучше всех. 
-Его биография впечатляет: однокурсник Кеннеди в Гарварде, офицер разведки, исследователь ФРС, профессор экономики, управляющий активами, историк, специалист по риску и автор книг. 
-
- Читать далее]]></summary>
-        <author>
-            <name>TraPhro</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[CFM International получила одобрение на улучшение двигателей LEAP-1B]]></title>
-        <id>https://ru.investing.com/news/stock-market-news/article-3309661</id>
-        <link href="https://ru.investing.com/news/stock-market-news/article-3309661"/>
-        <updated>2026-07-18T17:25:55.000Z</updated>
-        <author>
-            <name>Investing.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[Перевод] «Митохондриальная теория разума» Мартина Пикарда]]></title>
-        <id>https://habr.com/ru/articles/1060506/</id>
-        <link href="https://habr.com/ru/articles/1060506/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060506"/>
-        <updated>2026-07-18T17:02:49.000Z</updated>
-        <summary type="html"><![CDATA[Было девять утра четверга, и Мартин Пикард наблюдал, как его кровь утекает по шлангу капельницы из руки в отверстие в стене. Он сидел на односпальной кровати в тесной комнатке, расположенной на расстоянии меньше ширины плеча от раковины из нержавеющей стали и фарфорового унитаза. Каждый час в течение 24 часов, в том числе во время сна, медсестра отводила кровь из его руки исследовательской группе, работавшей в соседней комнате; в каждый момент времени, если он был бодр, он также сдавал образец слюны и заполнял анкету о своём настроении.
-Комната напоминала камеру или, возможно, очень тесный гостиничный номер, но на самом деле это была камера для исследования метаболизма — одна из всего лишь 50 подобных в мире. Её очевидно небольшой размер не позволял Пикарду тратить лишнюю энергию сверх абсолютного минимума, необходимого для поддержания жизни. Дневной сон был запрещён, как и приём любой пищи, кроме строго расписанных приёмов пищи, рассчитанных с учётом его калорийных потребностей. Ложиться спать нужно было ровно в 23:00. Перед тем как погасить свет, Пикард надевал устройство для мониторинга жизненных показателей и мозговой активности во время сна.
-Хотя занятий в комнате было не так уж много — в основном он сидел в постели, читая или работая за ноутбуком, — в тот июльский день 2021 года Пикард испытывал прежде всего волнение. Дело в том, что он стал первым добровольцем в эксперименте, проводимом Лабораторией митохондриальной психобиологии, которую он возглавляет в Медицинском центре имени Ирвинга при Колумбийском университете в Нью-Йорке. Изучая, сколько энергии требуется для поддержания базовых жизненных функций, его лаборатория стремится исследовать фактор, влияющий на здоровье и болезни, начиная с молекулярного уровня и заканчивая сознанием (который, по его мнению, другие упускают из виду): митохондрии.
- Читать далее]]></summary>
-        <author>
-            <name>SLY_G</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Видео: «самонадевающийся» костюм]]></title>
-        <id>3034266</id>
-        <link href="https://vc.ru/future/3034266-samonadevayushchiy-kostyum?from=rss"/>
-        <updated>2026-07-18T16:28:21.000Z</updated>
-        <summary type="html"><![CDATA[Учёные полагают, что технология пригодится не только пожилым, людям с инвалидностью, врачам и спасателям, но ещё и, например, работникам чистых зон на полупроводниковых производствах.]]></summary>
-        <author>
-            <name>Полина Лааксо</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Goldman Sachs: 3 инвестиционные темы вне ИИ]]></title>
-        <id>https://ru.investing.com/news/stock-market-news/article-3309658</id>
-        <link href="https://ru.investing.com/news/stock-market-news/article-3309658"/>
-        <updated>2026-07-18T16:19:43.000Z</updated>
-        <author>
-            <name>Investing.com</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Не отдам Gpick! Он хороший! Но крутить педали придётся…]]></title>
-        <id>https://habr.com/ru/articles/1060500/</id>
-        <link href="https://habr.com/ru/articles/1060500/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060500"/>
-        <updated>2026-07-18T16:14:02.000Z</updated>
-        <summary type="html"><![CDATA[Исторически лучший Gpick в KDE на Wayland остался без пипетки, а штатные kcolorpicker-ы повергают в печаль и уныние. Что делать? Велосипедить! Написал лёгкий Python-скрипт, дёргающий родной XDG-портал.
-UPD: Прокачал утилиту до полноценного комбайна — теперь она выдаёт чистые данные без префиксов, умеет копировать конкретные форматы (HEX, RGB, HSL) в буфер и идеально встаёт в любые shell-конвейеры и хоткеи. Больше велосипедов богу СПО!
- Читать далее]]></summary>
-        <author>
-            <name>Assador</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ч. 18 — Конвейер контента для MMO: импорт анимации, экипировка и обновление игры без патчей]]></title>
-        <id>https://habr.com/ru/articles/1060484/</id>
-        <link href="https://habr.com/ru/articles/1060484/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060484"/>
-        <updated>2026-07-18T16:09:37.000Z</updated>
-        <summary type="html"><![CDATA[ИИ сегодня умеет рисовать персонажей и делать для них анимации. Но это только половина задачи. Их ещё нужно встроить в игру: импортировать, связать с игровой логикой, привязать экипировку, разместить в мире и доставить игрокам без обновления клиента. В этой части показываю, как этот конвейер работает у меня.  
- Читать далее]]></summary>
-        <author>
-            <name>webrobot</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Разработка автономного лабораторного блока питания с Power Delivery 140 Вт]]></title>
-        <id>https://habr.com/ru/articles/1060490/</id>
-        <link href="https://habr.com/ru/articles/1060490/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060490"/>
-        <updated>2026-07-18T15:15:40.000Z</updated>
-        <summary type="html"><![CDATA[Практически любой лабораторный блок питания привязан к розетке. Это не проблема, пока работа ведётся за рабочим столом. Но как только возникает необходимость выехать на объект, протестировать автомобильную электронику или запитать устройство вдали от сети, обычный лабораторный блок питания превращается в бесполезную коробку.
-Мне захотелось объединить сразу несколько устройств в одном корпусе:
- Читать далее]]></summary>
-        <author>
-            <name>youtube_com_chevichelov</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[«Китай опроверг Запад…» и другие моменты с Кэтлин Эйзенхардт]]></title>
-        <id>https://habr.com/ru/articles/1060486/</id>
-        <link href="https://habr.com/ru/articles/1060486/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060486"/>
-        <updated>2026-07-18T15:10:39.000Z</updated>
-        <summary type="html"><![CDATA[Первая из серии статей о самых понравившихся мне курсах Стэнфорда, где я отучился пять лет на факультете компьютерных наук.  
-Рассматриваем курс MS&E 280: Organizations and Structures с Кэтлин Эйзенхардт.
- Читать далее]]></summary>
-        <author>
-            <name>germanenik</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Wildberries «прорабатывает» выплаты продавцам, чей товар хранился на загоревшихся складах «Котовск» и «Электросталь»]]></title>
-        <id>3034224</id>
-        <link href="https://vc.ru/marketplace/3034224-wildberries-rassmatrivayet-kompensatsii-prodavtsam-posle-pozhara-na-skladakh?from=rss"/>
-        <updated>2026-07-18T14:42:57.000Z</updated>
-        <summary type="html"><![CDATA[Пока без конкретики.]]></summary>
-        <author>
-            <name>Полина Лааксо</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ложечка кваркового супа. Об истинных и возможных свойствах кварк-глюонной плазмы]]></title>
-        <id>https://habr.com/ru/articles/1060476/</id>
-        <link href="https://habr.com/ru/articles/1060476/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060476"/>
-        <updated>2026-07-18T14:05:33.000Z</updated>
-        <summary type="html"><![CDATA[Привет, Хабр.    
-В своё время я обнаружил в хабе «Научпоп» интересную нишу, статьи из которой вам нравится читать. Речь о статьях, которые рассматривают экзотические агрегатные состояния вещества. Я впервые попробовал зайти в неё со статьями «Колыбель для страпельки» и «Чёрное сердце Нептуна, или как был открыт суперионный лёд». Ещё одно важное экзотическое агрегатное состояние – это конденсат Бозе-Эйнштейна, обладающий уникальным набором свойств (кстати, уважаемый @it_history публиковал на Хабре переводной материал «Человек, подчинивший себе половину частиц во Вселенной», посвящённый великому Шатьендранату Бозе).
-Экзотические агрегатные состояния возникают в условиях, когда температура, давление и концентрация вещества сильно отличаются от значений, обычных у поверхности Земли. В этой статье мы разберём ещё одно, несомненно, реальное агрегатное состояние вещества — кварк-глюонную плазму, а также затронем физические свойства условно гипотетических, но неплохо описанных на кончике пера «глюболлов» — клубочков, не содержащих кварков, а состоящих из чистых глюонов.  
- Читать далее]]></summary>
-        <author>
-            <name>OlegSivchenko</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Тайна Intel i740 — самой экзотической видеокарты из 90-х]]></title>
-        <id>https://habr.com/ru/companies/timeweb/articles/1059934/</id>
-        <link href="https://habr.com/ru/companies/timeweb/articles/1059934/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1059934"/>
-        <updated>2026-07-18T14:05:20.000Z</updated>
-        <summary type="html"><![CDATA[Ранее я часто рассказывал об особенностях видеокарт из 90-х. В рамках прошлых статей, мы успели с вами рассмотреть внутреннюю архитектуру 3dfx Voodoo, узнать о кастомном графическом API в S3 ViRGE, и даже написать свою собственную небольшую демку под видеокарты из 90-х. Вместо рассказов о GeForce 256 и ATi 3D Rage, в сегодняшнем материале мне хотелось бы поговорить о видеокарте, которая обогнала своё время — и при этом всё равно провалилась. Как вы уже поняли — речь пойдет об Intel i740.
-Каким был первый GPU от Intel, на что он был способен и в чём заключается его главная тайна — читайте в сегодняшней статье!
- Читать далее]]></summary>
-        <author>
-            <name>monobogdan (Timeweb Cloud)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Бенчмаркая Sum: ускорил циклом — замедлил в ×4,7]]></title>
-        <id>https://habr.com/ru/articles/1060470/</id>
-        <link href="https://habr.com/ru/articles/1060470/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060470"/>
-        <updated>2026-07-18T14:04:32.000Z</updated>
-        <summary type="html"><![CDATA[Уважаемые читатели, в этой статье я хочу рассказать о том, что происходит внутри values.Sum() в современном .NET — там нашлись векторные инструкции, контроль переполнения и список процессоров, которым рантайм намеренно ограничивает ширину вектора, — и представить свои выводы.
-В прошлых статьях серии самописные циклы уже проигрывали BCL в поиске по строке, JIT сам выкидывал проверки границ, а foreach прятал аллокации. Тут случай интереснее: values.Sum() — это LINQ, который при оптимизации первым делом меняют на цикл. 
- Читать далее]]></summary>
-        <author>
-            <name>Geronom</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Превращаем китайский домофон за 400 рублей в Telegram-звонок с фото и видео]]></title>
-        <id>https://habr.com/ru/articles/1060478/</id>
-        <link href="https://habr.com/ru/articles/1060478/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=1060478"/>
-        <updated>2026-07-18T13:57:55.000Z</updated>
-        <summary type="html"><![CDATA[Несколько лет у меня лежал недорогой китайский видеодомофон Doorbell M8, работающий через приложение Ulooka. Покупал я его на одном из маркетплейсов примерно за 400 рублей — скорее из любопытства, чем из реальной необходимости.
- Читать далее]]></summary>
-        <author>
-            <name>vaalimusic</name>
         </author>
     </entry>
 </feed>
